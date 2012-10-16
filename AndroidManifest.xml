@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whateversoft"
+    android:versionCode="15"
+    android:versionName="0.91">
+
+    <uses-sdk android:minSdkVersion="8" 
+        	  android:targetSdkVersion="14"/>
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="Color Shafted v0.91"
+        android:theme="@style/Theme.NoBackground"
+        android:debuggable="false">
+        <activity
+            android:label="Color Shafted"
+            android:name=".colorshafted.ColorShafted" 
+            android:configChanges = "keyboard|keyboardHidden|orientation"
+        	android:screenOrientation = "landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--                                  -->
+        </activity>
+        <activity
+            android:label="Color Shafted Settings"
+            android:name=".colorshafted.Settings" 
+            android:theme="@android:style/Theme"
+            android:configChanges = "keyboard|keyboardHidden">
+            <!--                                  -->
+        </activity>
+        <!--  debug starter activity  -->
+        <activity
+            android:label="Color Shafted - DEBUG START OPTIONS"
+            android:name=".colorshafted.DebugStarter" 
+            android:theme="@android:style/Theme"
+            android:configChanges = "keyboard|keyboardHidden">
+            <!--  Set as the default run activity -->
+        </activity>
+  
+          <!-- DEFINE PERMISSIONS FOR CAPABILITIES -->
+	<!-- END OF PERMISSIONS FOR CAPABILITIES -->
+    </application>
+    <uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name = "android.permission.WAKE_LOCK"/>
+	<uses-permission android:name = "android.permission.INTERNET"/>
+	<uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+</manifest>

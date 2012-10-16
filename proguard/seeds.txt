@@ -1,0 +1,49 @@
+com.google.gson.FieldNamingPolicy: com.google.gson.FieldNamingPolicy[] values()
+com.google.gson.FieldNamingPolicy: com.google.gson.FieldNamingPolicy valueOf(java.lang.String)
+com.google.gson.LongSerializationPolicy: com.google.gson.LongSerializationPolicy[] values()
+com.google.gson.LongSerializationPolicy: com.google.gson.LongSerializationPolicy valueOf(java.lang.String)
+com.google.gson.stream.JsonScope: com.google.gson.stream.JsonScope[] values()
+com.google.gson.stream.JsonScope: com.google.gson.stream.JsonScope valueOf(java.lang.String)
+com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken[] values()
+com.google.gson.stream.JsonToken: com.google.gson.stream.JsonToken valueOf(java.lang.String)
+com.whateversoft.android.framework.Graphics$PixmapFormat: com.whateversoft.android.framework.Graphics$PixmapFormat[] values()
+com.whateversoft.android.framework.Graphics$PixmapFormat: com.whateversoft.android.framework.Graphics$PixmapFormat valueOf(java.lang.String)
+com.whateversoft.android.framework.MusicJukebox$PlayMode: com.whateversoft.android.framework.MusicJukebox$PlayMode[] values()
+com.whateversoft.android.framework.MusicJukebox$PlayMode: com.whateversoft.android.framework.MusicJukebox$PlayMode valueOf(java.lang.String)
+com.whateversoft.android.framework.ScreenInfo$VirtualResolution: com.whateversoft.android.framework.ScreenInfo$VirtualResolution[] values()
+com.whateversoft.android.framework.ScreenInfo$VirtualResolution: com.whateversoft.android.framework.ScreenInfo$VirtualResolution valueOf(java.lang.String)
+com.whateversoft.android.framework.impl.android.CanvasGame
+com.whateversoft.android.preferences.SeekBarPreference
+com.whateversoft.android.preferences.SeekBarPreference: SeekBarPreference(android.content.Context,android.util.AttributeSet)
+com.whateversoft.android.preferences.SeekBarPreference: SeekBarPreference(android.content.Context,android.util.AttributeSet,int)
+com.whateversoft.colorshafted.ColorShafted
+com.whateversoft.colorshafted.ColorShafted$GameMode: com.whateversoft.colorshafted.ColorShafted$GameMode[] values()
+com.whateversoft.colorshafted.ColorShafted$GameMode: com.whateversoft.colorshafted.ColorShafted$GameMode valueOf(java.lang.String)
+com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction: com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction[] values()
+com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction: com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction valueOf(java.lang.String)
+com.whateversoft.colorshafted.DebugStarter
+com.whateversoft.colorshafted.Settings
+com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod: com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod[] values()
+com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod: com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod valueOf(java.lang.String)
+com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod: com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod[] values()
+com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod: com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod valueOf(java.lang.String)
+com.whateversoft.colorshafted.practice.AccelerometerTest
+com.whateversoft.colorshafted.practice.AndroidBasicsStarter
+com.whateversoft.colorshafted.practice.AssetsTest
+com.whateversoft.colorshafted.practice.BitmapTest
+com.whateversoft.colorshafted.practice.ExternalStorageTest
+com.whateversoft.colorshafted.practice.FontTest
+com.whateversoft.colorshafted.practice.FullScreenTest
+com.whateversoft.colorshafted.practice.KeyTest
+com.whateversoft.colorshafted.practice.LifeCycleTest
+com.whateversoft.colorshafted.practice.MediaPlayerTest
+com.whateversoft.colorshafted.practice.MultiTouchTest
+com.whateversoft.colorshafted.practice.RenderViewTest
+com.whateversoft.colorshafted.practice.ShapeTest
+com.whateversoft.colorshafted.practice.SingleTouchTest
+com.whateversoft.colorshafted.practice.SoundPoolTest
+com.whateversoft.colorshafted.practice.SurfaceViewTest
+com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle: com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle[] values()
+com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle: com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle valueOf(java.lang.String)
+com.whateversoft.colorshafted.screens.TitleScr$SelectionAction: com.whateversoft.colorshafted.screens.TitleScr$SelectionAction[] values()
+com.whateversoft.colorshafted.screens.TitleScr$SelectionAction: com.whateversoft.colorshafted.screens.TitleScr$SelectionAction valueOf(java.lang.String)

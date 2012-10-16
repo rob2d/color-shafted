@@ -1,0 +1,3242 @@
+android.annotation.SuppressLint -> a.a.a:
+    java.lang.String[] value() -> a
+android.annotation.TargetApi -> a.a.b:
+    int value() -> a
+com.google.gson.DefaultDateTypeAdapter -> com.a.a.a:
+    java.text.DateFormat enUsFormat -> a
+    java.text.DateFormat localFormat -> b
+    java.text.DateFormat iso8601Format -> c
+    com.google.gson.JsonElement serialize(java.util.Date,java.lang.reflect.Type,com.google.gson.JsonSerializationContext) -> a
+    java.util.Date deserialize(com.google.gson.JsonElement,java.lang.reflect.Type,com.google.gson.JsonDeserializationContext) -> a
+    java.util.Date deserializeToDate(com.google.gson.JsonElement) -> a
+    java.lang.String toString() -> toString
+    com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type,com.google.gson.JsonSerializationContext) -> a
+    java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type,com.google.gson.JsonDeserializationContext) -> b
+com.google.gson.ExclusionStrategy -> com.a.a.b:
+    boolean shouldSkipField(com.google.gson.FieldAttributes) -> a
+    boolean shouldSkipClass(java.lang.Class) -> a
+com.google.gson.FieldAttributes -> com.a.a.c:
+    java.lang.reflect.Field field -> a
+    java.lang.Class getDeclaringClass() -> a
+    java.lang.String getName() -> b
+    java.lang.reflect.Type getDeclaredType() -> c
+    java.lang.Class getDeclaredClass() -> d
+    java.lang.annotation.Annotation getAnnotation(java.lang.Class) -> a
+    java.util.Collection getAnnotations() -> e
+    boolean hasModifier(int) -> a
+    java.lang.Object get(java.lang.Object) -> a
+    boolean isSynthetic() -> f
+com.google.gson.FieldNamingPolicy -> com.a.a.d:
+    com.google.gson.FieldNamingPolicy IDENTITY -> a
+    com.google.gson.FieldNamingPolicy UPPER_CAMEL_CASE -> b
+    com.google.gson.FieldNamingPolicy UPPER_CAMEL_CASE_WITH_SPACES -> c
+    com.google.gson.FieldNamingPolicy LOWER_CASE_WITH_UNDERSCORES -> d
+    com.google.gson.FieldNamingPolicy LOWER_CASE_WITH_DASHES -> e
+    com.google.gson.FieldNamingPolicy[] $VALUES -> f
+    com.google.gson.FieldNamingPolicy[] values() -> values
+    com.google.gson.FieldNamingPolicy valueOf(java.lang.String) -> valueOf
+    java.lang.String separateCamelCase(java.lang.String,java.lang.String) -> b
+    java.lang.String upperCaseFirstLetter(java.lang.String) -> b
+    java.lang.String modifyString(char,java.lang.String,int) -> a
+    java.lang.String access$100(java.lang.String) -> a
+    java.lang.String access$200(java.lang.String,java.lang.String) -> a
+com.google.gson.FieldNamingPolicy$1 -> com.a.a.e:
+    java.lang.String translateName(java.lang.reflect.Field) -> a
+com.google.gson.FieldNamingPolicy$2 -> com.a.a.f:
+    java.lang.String translateName(java.lang.reflect.Field) -> a
+com.google.gson.FieldNamingPolicy$3 -> com.a.a.g:
+    java.lang.String translateName(java.lang.reflect.Field) -> a
+com.google.gson.FieldNamingPolicy$4 -> com.a.a.h:
+    java.lang.String translateName(java.lang.reflect.Field) -> a
+com.google.gson.FieldNamingPolicy$5 -> com.a.a.i:
+    java.lang.String translateName(java.lang.reflect.Field) -> a
+com.google.gson.FieldNamingStrategy -> com.a.a.j:
+    java.lang.String translateName(java.lang.reflect.Field) -> a
+com.google.gson.Gson -> com.a.a.k:
+    boolean DEFAULT_JSON_NON_EXECUTABLE -> a
+    java.lang.String JSON_NON_EXECUTABLE_PREFIX -> d
+    java.lang.ThreadLocal calls -> e
+    java.util.Map typeTokenCache -> f
+    java.util.List factories -> g
+    com.google.gson.internal.ConstructorConstructor constructorConstructor -> h
+    boolean serializeNulls -> i
+    boolean htmlSafe -> j
+    boolean generateNonExecutableJson -> k
+    boolean prettyPrinting -> l
+    com.google.gson.JsonDeserializationContext deserializationContext -> b
+    com.google.gson.JsonSerializationContext serializationContext -> c
+    com.google.gson.TypeAdapter doubleAdapter(boolean) -> a
+    com.google.gson.TypeAdapter floatAdapter(boolean) -> b
+    void checkValidFloatingPoint(double) -> a
+    com.google.gson.TypeAdapter longAdapter(com.google.gson.LongSerializationPolicy) -> a
+    com.google.gson.TypeAdapter getAdapter(com.google.gson.reflect.TypeToken) -> a
+    com.google.gson.TypeAdapter getAdapter(java.lang.Class) -> a
+    com.google.gson.JsonElement toJsonTree(java.lang.Object) -> a
+    com.google.gson.JsonElement toJsonTree(java.lang.Object,java.lang.reflect.Type) -> a
+    java.lang.String toJson(java.lang.Object) -> b
+    java.lang.String toJson(java.lang.Object,java.lang.reflect.Type) -> b
+    void toJson(java.lang.Object,java.lang.Appendable) -> a
+    void toJson(java.lang.Object,java.lang.reflect.Type,java.lang.Appendable) -> a
+    void toJson(java.lang.Object,java.lang.reflect.Type,com.google.gson.stream.JsonWriter) -> a
+    java.lang.String toJson(com.google.gson.JsonElement) -> a
+    void toJson(com.google.gson.JsonElement,java.lang.Appendable) -> a
+    com.google.gson.stream.JsonWriter newJsonWriter(java.io.Writer) -> a
+    void toJson(com.google.gson.JsonElement,com.google.gson.stream.JsonWriter) -> a
+    java.lang.Object fromJson(java.lang.String,java.lang.Class) -> a
+    java.lang.Object fromJson(java.lang.String,java.lang.reflect.Type) -> a
+    java.lang.Object fromJson(java.io.Reader,java.lang.Class) -> a
+    java.lang.Object fromJson(java.io.Reader,java.lang.reflect.Type) -> a
+    void assertFullConsumption(java.lang.Object,com.google.gson.stream.JsonReader) -> a
+    java.lang.Object fromJson(com.google.gson.stream.JsonReader,java.lang.reflect.Type) -> a
+    java.lang.Object fromJson(com.google.gson.JsonElement,java.lang.Class) -> a
+    java.lang.Object fromJson(com.google.gson.JsonElement,java.lang.reflect.Type) -> a
+    java.lang.String toString() -> toString
+    void access$000(com.google.gson.Gson,double) -> a
+    java.util.List access$100(com.google.gson.Gson) -> a
+com.google.gson.Gson$1 -> com.a.a.l:
+    com.google.gson.Gson this$0 -> a
+    java.util.Map initialValue() -> a
+    java.lang.Object initialValue() -> initialValue
+com.google.gson.Gson$2 -> com.a.a.m:
+    com.google.gson.Gson this$0 -> a
+    java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type) -> a
+com.google.gson.Gson$3 -> com.a.a.n:
+    com.google.gson.Gson this$0 -> a
+    com.google.gson.JsonElement serialize(java.lang.Object) -> a
+    com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type) -> a
+com.google.gson.Gson$4 -> com.a.a.o:
+    com.google.gson.Gson this$0 -> a
+    java.lang.Double read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.Gson$5 -> com.a.a.p:
+    com.google.gson.Gson this$0 -> a
+    java.lang.Float read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.Gson$6 -> com.a.a.q:
+    com.google.gson.Gson this$0 -> a
+    java.lang.Number read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.Gson$7 -> com.a.a.r:
+    com.google.gson.TypeAdapter getNextAdapter(com.google.gson.Gson,com.google.gson.TypeAdapterFactory,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.Gson$FutureTypeAdapter -> com.a.a.s:
+    com.google.gson.TypeAdapter delegate -> a
+    void setDelegate(com.google.gson.TypeAdapter) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.GsonBuilder -> com.a.a.t:
+    com.google.gson.internal.Excluder excluder -> a
+    com.google.gson.LongSerializationPolicy longSerializationPolicy -> b
+    com.google.gson.FieldNamingStrategy fieldNamingPolicy -> c
+    java.util.Map instanceCreators -> d
+    java.util.List factories -> e
+    java.util.List hierarchyFactories -> f
+    boolean serializeNulls -> g
+    java.lang.String datePattern -> h
+    int dateStyle -> i
+    int timeStyle -> j
+    boolean complexMapKeySerialization -> k
+    boolean serializeSpecialFloatingPointValues -> l
+    boolean escapeHtmlChars -> m
+    boolean prettyPrinting -> n
+    boolean generateNonExecutableJson -> o
+    com.google.gson.GsonBuilder setVersion(double) -> a
+    com.google.gson.GsonBuilder excludeFieldsWithModifiers(int[]) -> a
+    com.google.gson.GsonBuilder generateNonExecutableJson() -> a
+    com.google.gson.GsonBuilder excludeFieldsWithoutExposeAnnotation() -> b
+    com.google.gson.GsonBuilder serializeNulls() -> c
+    com.google.gson.GsonBuilder enableComplexMapKeySerialization() -> d
+    com.google.gson.GsonBuilder disableInnerClassSerialization() -> e
+    com.google.gson.GsonBuilder setLongSerializationPolicy(com.google.gson.LongSerializationPolicy) -> a
+    com.google.gson.GsonBuilder setFieldNamingPolicy(com.google.gson.FieldNamingPolicy) -> a
+    com.google.gson.GsonBuilder setFieldNamingStrategy(com.google.gson.FieldNamingStrategy) -> a
+    com.google.gson.GsonBuilder setExclusionStrategies(com.google.gson.ExclusionStrategy[]) -> a
+    com.google.gson.GsonBuilder addSerializationExclusionStrategy(com.google.gson.ExclusionStrategy) -> a
+    com.google.gson.GsonBuilder addDeserializationExclusionStrategy(com.google.gson.ExclusionStrategy) -> b
+    com.google.gson.GsonBuilder setPrettyPrinting() -> f
+    com.google.gson.GsonBuilder disableHtmlEscaping() -> g
+    com.google.gson.GsonBuilder setDateFormat(java.lang.String) -> a
+    com.google.gson.GsonBuilder setDateFormat(int) -> a
+    com.google.gson.GsonBuilder setDateFormat(int,int) -> a
+    com.google.gson.GsonBuilder registerTypeAdapter(java.lang.reflect.Type,java.lang.Object) -> a
+    com.google.gson.GsonBuilder registerTypeAdapterFactory(com.google.gson.TypeAdapterFactory) -> a
+    com.google.gson.GsonBuilder registerTypeHierarchyAdapter(java.lang.Class,java.lang.Object) -> a
+    com.google.gson.GsonBuilder serializeSpecialFloatingPointValues() -> h
+    com.google.gson.Gson create() -> i
+    void addTypeAdaptersForDate(java.lang.String,int,int,java.util.List) -> a
+com.google.gson.InstanceCreator -> com.a.a.u:
+    java.lang.Object createInstance(java.lang.reflect.Type) -> a
+com.google.gson.JsonArray -> com.a.a.v:
+    java.util.List elements -> a
+    void add(com.google.gson.JsonElement) -> a
+    void addAll(com.google.gson.JsonArray) -> a
+    int size() -> a
+    java.util.Iterator iterator() -> iterator
+    com.google.gson.JsonElement get(int) -> a
+    java.lang.Number getAsNumber() -> b
+    java.lang.String getAsString() -> c
+    double getAsDouble() -> d
+    java.math.BigDecimal getAsBigDecimal() -> e
+    java.math.BigInteger getAsBigInteger() -> f
+    float getAsFloat() -> g
+    long getAsLong() -> h
+    int getAsInt() -> i
+    byte getAsByte() -> j
+    char getAsCharacter() -> k
+    short getAsShort() -> l
+    boolean getAsBoolean() -> m
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.google.gson.JsonDeserializationContext -> com.a.a.w:
+    java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type) -> a
+com.google.gson.JsonDeserializer -> com.a.a.x:
+    java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type,com.google.gson.JsonDeserializationContext) -> b
+com.google.gson.JsonElement -> com.a.a.y:
+    boolean isJsonArray() -> n
+    boolean isJsonObject() -> o
+    boolean isJsonPrimitive() -> p
+    boolean isJsonNull() -> q
+    com.google.gson.JsonObject getAsJsonObject() -> r
+    com.google.gson.JsonArray getAsJsonArray() -> s
+    com.google.gson.JsonPrimitive getAsJsonPrimitive() -> t
+    com.google.gson.JsonNull getAsJsonNull() -> u
+    boolean getAsBoolean() -> m
+    java.lang.Boolean getAsBooleanWrapper() -> v
+    java.lang.Number getAsNumber() -> b
+    java.lang.String getAsString() -> c
+    double getAsDouble() -> d
+    float getAsFloat() -> g
+    long getAsLong() -> h
+    int getAsInt() -> i
+    byte getAsByte() -> j
+    char getAsCharacter() -> k
+    java.math.BigDecimal getAsBigDecimal() -> e
+    java.math.BigInteger getAsBigInteger() -> f
+    short getAsShort() -> l
+    java.lang.String toString() -> toString
+com.google.gson.JsonIOException -> com.a.a.z:
+    long serialVersionUID -> b
+com.google.gson.JsonNull -> com.a.a.A:
+    com.google.gson.JsonNull INSTANCE -> a
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+com.google.gson.JsonObject -> com.a.a.B:
+    java.util.Map members -> a
+    void add(java.lang.String,com.google.gson.JsonElement) -> a
+    com.google.gson.JsonElement remove(java.lang.String) -> a
+    void addProperty(java.lang.String,java.lang.String) -> a
+    void addProperty(java.lang.String,java.lang.Number) -> a
+    void addProperty(java.lang.String,java.lang.Boolean) -> a
+    void addProperty(java.lang.String,java.lang.Character) -> a
+    com.google.gson.JsonElement createJsonElement(java.lang.Object) -> a
+    java.util.Set entrySet() -> a
+    boolean has(java.lang.String) -> b
+    com.google.gson.JsonElement get(java.lang.String) -> c
+    com.google.gson.JsonPrimitive getAsJsonPrimitive(java.lang.String) -> d
+    com.google.gson.JsonArray getAsJsonArray(java.lang.String) -> e
+    com.google.gson.JsonObject getAsJsonObject(java.lang.String) -> f
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.google.gson.JsonParseException -> com.a.a.C:
+    long serialVersionUID -> a
+com.google.gson.JsonParser -> com.a.a.D:
+    com.google.gson.JsonElement parse(java.lang.String) -> a
+    com.google.gson.JsonElement parse(java.io.Reader) -> a
+    com.google.gson.JsonElement parse(com.google.gson.stream.JsonReader) -> a
+com.google.gson.JsonPrimitive -> com.a.a.E:
+    java.lang.Class[] PRIMITIVE_TYPES -> a
+    java.lang.Object value -> b
+    void setValue(java.lang.Object) -> a
+    boolean isBoolean() -> a
+    java.lang.Boolean getAsBooleanWrapper() -> v
+    boolean getAsBoolean() -> m
+    boolean isNumber() -> w
+    java.lang.Number getAsNumber() -> b
+    boolean isString() -> x
+    java.lang.String getAsString() -> c
+    double getAsDouble() -> d
+    java.math.BigDecimal getAsBigDecimal() -> e
+    java.math.BigInteger getAsBigInteger() -> f
+    float getAsFloat() -> g
+    long getAsLong() -> h
+    short getAsShort() -> l
+    int getAsInt() -> i
+    byte getAsByte() -> j
+    char getAsCharacter() -> k
+    boolean isPrimitiveOrString(java.lang.Object) -> b
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+    boolean isIntegral(com.google.gson.JsonPrimitive) -> a
+com.google.gson.JsonSerializationContext -> com.a.a.F:
+    com.google.gson.JsonElement serialize(java.lang.Object) -> a
+    com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type) -> a
+com.google.gson.JsonSerializer -> com.a.a.G:
+    com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type,com.google.gson.JsonSerializationContext) -> a
+com.google.gson.JsonStreamParser -> com.a.a.H:
+    com.google.gson.stream.JsonReader parser -> a
+    java.lang.Object lock -> b
+    com.google.gson.JsonElement next() -> a
+    boolean hasNext() -> hasNext
+    void remove() -> remove
+    java.lang.Object next() -> next
+com.google.gson.JsonSyntaxException -> com.a.a.I:
+    long serialVersionUID -> b
+com.google.gson.LongSerializationPolicy -> com.a.a.J:
+    com.google.gson.LongSerializationPolicy DEFAULT -> a
+    com.google.gson.LongSerializationPolicy STRING -> b
+    com.google.gson.LongSerializationPolicy[] $VALUES -> c
+    com.google.gson.LongSerializationPolicy[] values() -> values
+    com.google.gson.LongSerializationPolicy valueOf(java.lang.String) -> valueOf
+    com.google.gson.JsonElement serialize(java.lang.Long) -> a
+com.google.gson.LongSerializationPolicy$1 -> com.a.a.K:
+    com.google.gson.JsonElement serialize(java.lang.Long) -> a
+com.google.gson.LongSerializationPolicy$2 -> com.a.a.L:
+    com.google.gson.JsonElement serialize(java.lang.Long) -> a
+com.google.gson.TreeTypeAdapter -> com.a.a.M:
+    com.google.gson.JsonSerializer serializer -> a
+    com.google.gson.JsonDeserializer deserializer -> b
+    com.google.gson.Gson gson -> c
+    com.google.gson.reflect.TypeToken typeToken -> d
+    com.google.gson.TypeAdapterFactory skipPast -> e
+    com.google.gson.TypeAdapter delegate -> f
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+    com.google.gson.TypeAdapter delegate() -> b
+    com.google.gson.TypeAdapterFactory newFactory(com.google.gson.reflect.TypeToken,java.lang.Object) -> a
+    com.google.gson.TypeAdapterFactory newFactoryWithMatchRawType(com.google.gson.reflect.TypeToken,java.lang.Object) -> b
+    com.google.gson.TypeAdapterFactory newTypeHierarchyFactory(java.lang.Class,java.lang.Object) -> a
+com.google.gson.TreeTypeAdapter$1 -> com.a.a.N:
+com.google.gson.TreeTypeAdapter$SingleTypeFactory -> com.a.a.O:
+    com.google.gson.reflect.TypeToken exactType -> a
+    boolean matchRawType -> b
+    java.lang.Class hierarchyType -> c
+    com.google.gson.JsonSerializer serializer -> d
+    com.google.gson.JsonDeserializer deserializer -> e
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.TypeAdapter -> com.a.a.P:
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+    void toJson(java.io.Writer,java.lang.Object) -> a
+    com.google.gson.TypeAdapter nullSafe() -> a
+    java.lang.String toJson(java.lang.Object) -> a
+    com.google.gson.JsonElement toJsonTree(java.lang.Object) -> b
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    java.lang.Object fromJson(java.io.Reader) -> a
+    java.lang.Object fromJson(java.lang.String) -> a
+    java.lang.Object fromJsonTree(com.google.gson.JsonElement) -> a
+com.google.gson.TypeAdapter$1 -> com.a.a.Q:
+    com.google.gson.TypeAdapter this$0 -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+com.google.gson.TypeAdapterFactory -> com.a.a.R:
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.annotations.Expose -> com.a.a.a.a:
+    boolean serialize() -> a
+    boolean deserialize() -> b
+com.google.gson.annotations.SerializedName -> com.a.a.a.b:
+    java.lang.String value() -> a
+com.google.gson.annotations.Since -> com.a.a.a.c:
+    double value() -> a
+com.google.gson.annotations.Until -> com.a.a.a.d:
+    double value() -> a
+com.google.gson.internal.$Gson$Preconditions -> com.a.a.b.a:
+    java.lang.Object checkNotNull(java.lang.Object) -> a
+    void checkArgument(boolean) -> a
+com.google.gson.internal.$Gson$Types -> com.a.a.b.b:
+    java.lang.reflect.Type[] EMPTY_TYPE_ARRAY -> a
+    java.lang.reflect.ParameterizedType newParameterizedTypeWithOwner(java.lang.reflect.Type,java.lang.reflect.Type,java.lang.reflect.Type[]) -> a
+    java.lang.reflect.GenericArrayType arrayOf(java.lang.reflect.Type) -> a
+    java.lang.reflect.WildcardType subtypeOf(java.lang.reflect.Type) -> b
+    java.lang.reflect.WildcardType supertypeOf(java.lang.reflect.Type) -> c
+    java.lang.reflect.Type canonicalize(java.lang.reflect.Type) -> d
+    java.lang.Class getRawType(java.lang.reflect.Type) -> e
+    boolean equal(java.lang.Object,java.lang.Object) -> a
+    boolean equals(java.lang.reflect.Type,java.lang.reflect.Type) -> a
+    int hashCodeOrZero(java.lang.Object) -> b
+    java.lang.String typeToString(java.lang.reflect.Type) -> f
+    java.lang.reflect.Type getGenericSupertype(java.lang.reflect.Type,java.lang.Class,java.lang.Class) -> a
+    java.lang.reflect.Type getSupertype(java.lang.reflect.Type,java.lang.Class,java.lang.Class) -> b
+    java.lang.reflect.Type getArrayComponentType(java.lang.reflect.Type) -> g
+    java.lang.reflect.Type getCollectionElementType(java.lang.reflect.Type,java.lang.Class) -> a
+    java.lang.reflect.Type[] getMapKeyAndValueTypes(java.lang.reflect.Type,java.lang.Class) -> b
+    java.lang.reflect.Type resolve(java.lang.reflect.Type,java.lang.Class,java.lang.reflect.Type) -> a
+    java.lang.reflect.Type resolveTypeVariable(java.lang.reflect.Type,java.lang.Class,java.lang.reflect.TypeVariable) -> a
+    int indexOf(java.lang.Object[],java.lang.Object) -> a
+    java.lang.Class declaringClassOf(java.lang.reflect.TypeVariable) -> a
+    void checkNotPrimitive(java.lang.reflect.Type) -> i
+    void access$000(java.lang.reflect.Type) -> h
+    int access$100(java.lang.Object) -> a
+com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl -> com.a.a.b.c:
+    java.lang.reflect.Type componentType -> a
+    long serialVersionUID -> b
+    java.lang.reflect.Type getGenericComponentType() -> getGenericComponentType
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl -> com.a.a.b.d:
+    java.lang.reflect.Type ownerType -> a
+    java.lang.reflect.Type rawType -> b
+    java.lang.reflect.Type[] typeArguments -> c
+    long serialVersionUID -> d
+    java.lang.reflect.Type[] getActualTypeArguments() -> getActualTypeArguments
+    java.lang.reflect.Type getRawType() -> getRawType
+    java.lang.reflect.Type getOwnerType() -> getOwnerType
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+com.google.gson.internal.$Gson$Types$WildcardTypeImpl -> com.a.a.b.e:
+    java.lang.reflect.Type upperBound -> a
+    java.lang.reflect.Type lowerBound -> b
+    long serialVersionUID -> c
+    java.lang.reflect.Type[] getUpperBounds() -> getUpperBounds
+    java.lang.reflect.Type[] getLowerBounds() -> getLowerBounds
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+com.google.gson.internal.ConstructorConstructor -> com.a.a.b.f:
+    java.util.Map instanceCreators -> a
+    com.google.gson.internal.ObjectConstructor getConstructor(com.google.gson.reflect.TypeToken) -> a
+    com.google.gson.internal.ObjectConstructor newDefaultConstructor(java.lang.Class) -> a
+    com.google.gson.internal.ObjectConstructor newDefaultImplementationConstructor(java.lang.Class) -> b
+    com.google.gson.internal.ObjectConstructor newUnsafeAllocator(java.lang.reflect.Type,java.lang.Class) -> a
+    java.lang.String toString() -> toString
+com.google.gson.internal.ConstructorConstructor$1 -> com.a.a.b.g:
+    com.google.gson.InstanceCreator val$creator -> a
+    java.lang.reflect.Type val$type -> b
+    com.google.gson.internal.ConstructorConstructor this$0 -> c
+    java.lang.Object construct() -> a
+com.google.gson.internal.ConstructorConstructor$2 -> com.a.a.b.h:
+    java.lang.reflect.Constructor val$constructor -> a
+    com.google.gson.internal.ConstructorConstructor this$0 -> b
+    java.lang.Object construct() -> a
+com.google.gson.internal.ConstructorConstructor$3 -> com.a.a.b.i:
+    com.google.gson.internal.ConstructorConstructor this$0 -> a
+    java.lang.Object construct() -> a
+com.google.gson.internal.ConstructorConstructor$4 -> com.a.a.b.j:
+    com.google.gson.internal.ConstructorConstructor this$0 -> a
+    java.lang.Object construct() -> a
+com.google.gson.internal.ConstructorConstructor$5 -> com.a.a.b.k:
+    com.google.gson.internal.ConstructorConstructor this$0 -> a
+    java.lang.Object construct() -> a
+com.google.gson.internal.ConstructorConstructor$6 -> com.a.a.b.l:
+    com.google.gson.internal.ConstructorConstructor this$0 -> a
+    java.lang.Object construct() -> a
+com.google.gson.internal.ConstructorConstructor$7 -> com.a.a.b.m:
+    com.google.gson.internal.ConstructorConstructor this$0 -> a
+    java.lang.Object construct() -> a
+com.google.gson.internal.ConstructorConstructor$8 -> com.a.a.b.n:
+    com.google.gson.internal.UnsafeAllocator unsafeAllocator -> d
+    java.lang.Class val$rawType -> a
+    java.lang.reflect.Type val$type -> b
+    com.google.gson.internal.ConstructorConstructor this$0 -> c
+    java.lang.Object construct() -> a
+com.google.gson.internal.Excluder -> com.a.a.b.o:
+    double IGNORE_VERSIONS -> b
+    com.google.gson.internal.Excluder DEFAULT -> a
+    double version -> c
+    int modifiers -> d
+    boolean serializeInnerClasses -> e
+    boolean requireExpose -> f
+    java.util.List serializationStrategies -> g
+    java.util.List deserializationStrategies -> h
+    com.google.gson.internal.Excluder clone() -> a
+    com.google.gson.internal.Excluder withVersion(double) -> a
+    com.google.gson.internal.Excluder withModifiers(int[]) -> a
+    com.google.gson.internal.Excluder disableInnerClassSerialization() -> b
+    com.google.gson.internal.Excluder excludeFieldsWithoutExposeAnnotation() -> c
+    com.google.gson.internal.Excluder withExclusionStrategy(com.google.gson.ExclusionStrategy,boolean,boolean) -> a
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+    boolean excludeField(java.lang.reflect.Field,boolean) -> a
+    boolean excludeClass(java.lang.Class,boolean) -> a
+    boolean isAnonymousOrLocal(java.lang.Class) -> a
+    boolean isInnerClass(java.lang.Class) -> b
+    boolean isStatic(java.lang.Class) -> c
+    boolean isValidVersion(com.google.gson.annotations.Since,com.google.gson.annotations.Until) -> a
+    boolean isValidSince(com.google.gson.annotations.Since) -> a
+    boolean isValidUntil(com.google.gson.annotations.Until) -> a
+    java.lang.Object clone() -> clone
+com.google.gson.internal.Excluder$1 -> com.a.a.b.p:
+    com.google.gson.TypeAdapter delegate -> f
+    boolean val$skipDeserialize -> a
+    boolean val$skipSerialize -> b
+    com.google.gson.Gson val$gson -> c
+    com.google.gson.reflect.TypeToken val$type -> d
+    com.google.gson.internal.Excluder this$0 -> e
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+    com.google.gson.TypeAdapter delegate() -> b
+com.google.gson.internal.GsonInternalAccess -> com.a.a.b.q:
+    com.google.gson.internal.GsonInternalAccess INSTANCE -> a
+    com.google.gson.TypeAdapter getNextAdapter(com.google.gson.Gson,com.google.gson.TypeAdapterFactory,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.JsonReaderInternalAccess -> com.a.a.b.r:
+    com.google.gson.internal.JsonReaderInternalAccess INSTANCE -> a
+    void promoteNameToValue(com.google.gson.stream.JsonReader) -> a
+com.google.gson.internal.LazilyParsedNumber -> com.a.a.b.s:
+    java.lang.String value -> a
+    int intValue() -> intValue
+    long longValue() -> longValue
+    float floatValue() -> floatValue
+    double doubleValue() -> doubleValue
+    java.lang.String toString() -> toString
+com.google.gson.internal.ObjectConstructor -> com.a.a.b.t:
+    java.lang.Object construct() -> a
+com.google.gson.internal.Pair -> com.a.a.b.u:
+    java.lang.Object first -> a
+    java.lang.Object second -> b
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+    boolean equal(java.lang.Object,java.lang.Object) -> a
+    java.lang.String toString() -> toString
+com.google.gson.internal.Primitives -> com.a.a.b.v:
+    java.util.Map PRIMITIVE_TO_WRAPPER_TYPE -> a
+    java.util.Map WRAPPER_TO_PRIMITIVE_TYPE -> b
+    void add(java.util.Map,java.util.Map,java.lang.Class,java.lang.Class) -> a
+    boolean isPrimitive(java.lang.reflect.Type) -> a
+    boolean isWrapperType(java.lang.reflect.Type) -> b
+    java.lang.Class wrap(java.lang.Class) -> a
+    java.lang.Class unwrap(java.lang.Class) -> b
+com.google.gson.internal.Streams -> com.a.a.b.w:
+    com.google.gson.JsonElement parse(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.JsonElement,com.google.gson.stream.JsonWriter) -> a
+    java.io.Writer writerForAppendable(java.lang.Appendable) -> a
+com.google.gson.internal.Streams$1 -> com.a.a.b.x:
+com.google.gson.internal.Streams$AppendableWriter -> com.a.a.b.y:
+    java.lang.Appendable appendable -> a
+    com.google.gson.internal.Streams$AppendableWriter$CurrentWrite currentWrite -> b
+    void write(char[],int,int) -> write
+    void write(int) -> write
+    void flush() -> flush
+    void close() -> close
+com.google.gson.internal.Streams$AppendableWriter$CurrentWrite -> com.a.a.b.z:
+    char[] chars -> a
+    int length() -> length
+    char charAt(int) -> charAt
+    java.lang.CharSequence subSequence(int,int) -> subSequence
+com.google.gson.internal.UnsafeAllocator -> com.a.a.b.A:
+    java.lang.Object newInstance(java.lang.Class) -> a
+    com.google.gson.internal.UnsafeAllocator create() -> a
+com.google.gson.internal.UnsafeAllocator$1 -> com.a.a.b.B:
+    java.lang.reflect.Method val$allocateInstance -> a
+    java.lang.Object val$unsafe -> b
+    java.lang.Object newInstance(java.lang.Class) -> a
+com.google.gson.internal.UnsafeAllocator$2 -> com.a.a.b.C:
+    java.lang.reflect.Method val$newInstance -> a
+    java.lang.Object newInstance(java.lang.Class) -> a
+com.google.gson.internal.UnsafeAllocator$3 -> com.a.a.b.D:
+    java.lang.reflect.Method val$newInstance -> a
+    int val$constructorId -> b
+    java.lang.Object newInstance(java.lang.Class) -> a
+com.google.gson.internal.UnsafeAllocator$4 -> com.a.a.b.E:
+    java.lang.Object newInstance(java.lang.Class) -> a
+com.google.gson.internal.bind.ArrayTypeAdapter -> com.a.a.b.a.a:
+    com.google.gson.TypeAdapterFactory FACTORY -> a
+    java.lang.Class componentType -> b
+    com.google.gson.TypeAdapter componentTypeAdapter -> c
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.ArrayTypeAdapter$1 -> com.a.a.b.a.b:
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.BigDecimalTypeAdapter -> com.a.a.b.a.c:
+    java.math.BigDecimal read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.math.BigDecimal) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.BigIntegerTypeAdapter -> com.a.a.b.a.d:
+    java.math.BigInteger read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.math.BigInteger) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.CollectionTypeAdapterFactory -> com.a.a.b.a.e:
+    com.google.gson.internal.ConstructorConstructor constructorConstructor -> a
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter -> com.a.a.b.a.f:
+    com.google.gson.TypeAdapter elementTypeAdapter -> b
+    com.google.gson.internal.ObjectConstructor constructor -> c
+    com.google.gson.internal.bind.CollectionTypeAdapterFactory this$0 -> a
+    java.util.Collection read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.util.Collection) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.DateTypeAdapter -> com.a.a.b.a.g:
+    com.google.gson.TypeAdapterFactory FACTORY -> a
+    java.text.DateFormat enUsFormat -> b
+    java.text.DateFormat localFormat -> c
+    java.text.DateFormat iso8601Format -> d
+    java.text.DateFormat buildIso8601Format() -> b
+    java.util.Date read(com.google.gson.stream.JsonReader) -> a
+    java.util.Date deserializeToDate(java.lang.String) -> b
+    void write(com.google.gson.stream.JsonWriter,java.util.Date) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.DateTypeAdapter$1 -> com.a.a.b.a.h:
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.JsonTreeReader -> com.a.a.b.a.i:
+    java.io.Reader UNREADABLE_READER -> a
+    java.lang.Object SENTINEL_CLOSED -> b
+    java.util.List stack -> c
+    void beginArray() -> a
+    void endArray() -> b
+    void beginObject() -> c
+    void endObject() -> d
+    boolean hasNext() -> e
+    com.google.gson.stream.JsonToken peek() -> f
+    java.lang.Object peekStack() -> q
+    java.lang.Object popStack() -> r
+    void expect(com.google.gson.stream.JsonToken) -> a
+    java.lang.String nextName() -> g
+    java.lang.String nextString() -> h
+    boolean nextBoolean() -> i
+    void nextNull() -> j
+    double nextDouble() -> k
+    long nextLong() -> l
+    int nextInt() -> m
+    void close() -> close
+    void skipValue() -> n
+    java.lang.String toString() -> toString
+    void promoteNameToValue() -> o
+com.google.gson.internal.bind.JsonTreeReader$1 -> com.a.a.b.a.j:
+    int read(char[],int,int) -> read
+    void close() -> close
+com.google.gson.internal.bind.JsonTreeWriter -> com.a.a.b.a.k:
+    java.io.Writer UNWRITABLE_WRITER -> a
+    com.google.gson.JsonPrimitive SENTINEL_CLOSED -> b
+    java.util.List stack -> c
+    java.lang.String pendingName -> d
+    com.google.gson.JsonElement product -> e
+    com.google.gson.JsonElement get() -> a
+    com.google.gson.JsonElement peek() -> k
+    void put(com.google.gson.JsonElement) -> a
+    com.google.gson.stream.JsonWriter beginArray() -> b
+    com.google.gson.stream.JsonWriter endArray() -> c
+    com.google.gson.stream.JsonWriter beginObject() -> d
+    com.google.gson.stream.JsonWriter endObject() -> e
+    com.google.gson.stream.JsonWriter name(java.lang.String) -> a
+    com.google.gson.stream.JsonWriter value(java.lang.String) -> b
+    com.google.gson.stream.JsonWriter nullValue() -> f
+    com.google.gson.stream.JsonWriter value(boolean) -> a
+    com.google.gson.stream.JsonWriter value(double) -> a
+    com.google.gson.stream.JsonWriter value(long) -> a
+    com.google.gson.stream.JsonWriter value(java.lang.Number) -> a
+    void flush() -> g
+    void close() -> close
+com.google.gson.internal.bind.JsonTreeWriter$1 -> com.a.a.b.a.l:
+    void write(char[],int,int) -> write
+    void flush() -> flush
+    void close() -> close
+com.google.gson.internal.bind.MapTypeAdapterFactory -> com.a.a.b.a.m:
+    com.google.gson.internal.ConstructorConstructor constructorConstructor -> a
+    boolean complexMapKeySerialization -> b
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+    com.google.gson.TypeAdapter getKeyAdapter(com.google.gson.Gson,java.lang.reflect.Type) -> a
+    com.google.gson.JsonElement toJsonTree(com.google.gson.TypeAdapter,java.lang.Object) -> b
+    boolean access$000(com.google.gson.internal.bind.MapTypeAdapterFactory) -> a
+    com.google.gson.JsonElement access$100(com.google.gson.TypeAdapter,java.lang.Object) -> a
+com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter -> com.a.a.b.a.n:
+    com.google.gson.TypeAdapter keyTypeAdapter -> b
+    com.google.gson.TypeAdapter valueTypeAdapter -> c
+    com.google.gson.internal.ObjectConstructor constructor -> d
+    com.google.gson.internal.bind.MapTypeAdapterFactory this$0 -> a
+    java.util.Map read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.util.Map) -> a
+    java.lang.String keyToString(com.google.gson.JsonElement) -> b
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.ObjectTypeAdapter -> com.a.a.b.a.o:
+    com.google.gson.TypeAdapterFactory FACTORY -> a
+    com.google.gson.Gson gson -> b
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.ObjectTypeAdapter$1 -> com.a.a.b.a.p:
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.ObjectTypeAdapter$2 -> com.a.a.b.a.q:
+    int[] $SwitchMap$com$google$gson$stream$JsonToken -> a
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory -> com.a.a.b.a.r:
+    com.google.gson.internal.ConstructorConstructor constructorConstructor -> a
+    com.google.gson.FieldNamingStrategy fieldNamingPolicy -> b
+    com.google.gson.internal.Excluder excluder -> c
+    boolean excludeField(java.lang.reflect.Field,boolean) -> a
+    java.lang.String getFieldName(java.lang.reflect.Field) -> a
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+    com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField createBoundField(com.google.gson.Gson,java.lang.reflect.Field,java.lang.String,com.google.gson.reflect.TypeToken,boolean,boolean) -> a
+    java.util.Map getBoundFields(com.google.gson.Gson,com.google.gson.reflect.TypeToken,java.lang.Class) -> a
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1 -> com.a.a.b.a.s:
+    com.google.gson.TypeAdapter typeAdapter -> a
+    com.google.gson.Gson val$context -> b
+    com.google.gson.reflect.TypeToken val$fieldType -> c
+    java.lang.reflect.Field val$field -> d
+    boolean val$isPrimitive -> e
+    com.google.gson.internal.bind.ReflectiveTypeAdapterFactory this$0 -> f
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+    void read(com.google.gson.stream.JsonReader,java.lang.Object) -> a
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter -> com.a.a.b.a.t:
+    com.google.gson.internal.ObjectConstructor constructor -> b
+    java.util.Map boundFields -> c
+    com.google.gson.internal.bind.ReflectiveTypeAdapterFactory this$0 -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField -> com.a.a.b.a.u:
+    java.lang.String name -> g
+    boolean serialized -> h
+    boolean deserialized -> i
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+    void read(com.google.gson.stream.JsonReader,java.lang.Object) -> a
+com.google.gson.internal.bind.SqlDateTypeAdapter -> com.a.a.b.a.v:
+    com.google.gson.TypeAdapterFactory FACTORY -> a
+    java.text.DateFormat format -> b
+    java.sql.Date read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.sql.Date) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.SqlDateTypeAdapter$1 -> com.a.a.b.a.w:
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.TimeTypeAdapter -> com.a.a.b.a.x:
+    com.google.gson.TypeAdapterFactory FACTORY -> a
+    java.text.DateFormat format -> b
+    java.sql.Time read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.sql.Time) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TimeTypeAdapter$1 -> com.a.a.b.a.y:
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper -> com.a.a.b.a.z:
+    com.google.gson.Gson context -> a
+    com.google.gson.TypeAdapter delegate -> b
+    java.lang.reflect.Type type -> c
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+    java.lang.reflect.Type getRuntimeTypeIfMoreSpecific(java.lang.reflect.Type,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters -> com.a.a.b.a.A:
+    com.google.gson.TypeAdapter CLASS -> a
+    com.google.gson.TypeAdapterFactory CLASS_FACTORY -> b
+    com.google.gson.TypeAdapter BIT_SET -> c
+    com.google.gson.TypeAdapterFactory BIT_SET_FACTORY -> d
+    com.google.gson.TypeAdapter BOOLEAN -> e
+    com.google.gson.TypeAdapter BOOLEAN_AS_STRING -> f
+    com.google.gson.TypeAdapterFactory BOOLEAN_FACTORY -> g
+    com.google.gson.TypeAdapter BYTE -> h
+    com.google.gson.TypeAdapterFactory BYTE_FACTORY -> i
+    com.google.gson.TypeAdapter SHORT -> j
+    com.google.gson.TypeAdapterFactory SHORT_FACTORY -> k
+    com.google.gson.TypeAdapter INTEGER -> l
+    com.google.gson.TypeAdapterFactory INTEGER_FACTORY -> m
+    com.google.gson.TypeAdapter LONG -> n
+    com.google.gson.TypeAdapter FLOAT -> o
+    com.google.gson.TypeAdapter DOUBLE -> p
+    com.google.gson.TypeAdapter NUMBER -> q
+    com.google.gson.TypeAdapterFactory NUMBER_FACTORY -> r
+    com.google.gson.TypeAdapter CHARACTER -> s
+    com.google.gson.TypeAdapterFactory CHARACTER_FACTORY -> t
+    com.google.gson.TypeAdapter STRING -> u
+    com.google.gson.TypeAdapterFactory STRING_FACTORY -> v
+    com.google.gson.TypeAdapter STRING_BUILDER -> w
+    com.google.gson.TypeAdapterFactory STRING_BUILDER_FACTORY -> x
+    com.google.gson.TypeAdapter STRING_BUFFER -> y
+    com.google.gson.TypeAdapterFactory STRING_BUFFER_FACTORY -> z
+    com.google.gson.TypeAdapter URL -> A
+    com.google.gson.TypeAdapterFactory URL_FACTORY -> B
+    com.google.gson.TypeAdapter URI -> C
+    com.google.gson.TypeAdapterFactory URI_FACTORY -> D
+    com.google.gson.TypeAdapter INET_ADDRESS -> E
+    com.google.gson.TypeAdapterFactory INET_ADDRESS_FACTORY -> F
+    com.google.gson.TypeAdapter UUID -> G
+    com.google.gson.TypeAdapterFactory UUID_FACTORY -> H
+    com.google.gson.TypeAdapterFactory TIMESTAMP_FACTORY -> I
+    com.google.gson.TypeAdapter CALENDAR -> J
+    com.google.gson.TypeAdapterFactory CALENDAR_FACTORY -> K
+    com.google.gson.TypeAdapter LOCALE -> L
+    com.google.gson.TypeAdapterFactory LOCALE_FACTORY -> M
+    com.google.gson.TypeAdapter JSON_ELEMENT -> N
+    com.google.gson.TypeAdapterFactory JSON_ELEMENT_FACTORY -> O
+    com.google.gson.TypeAdapterFactory ENUM_FACTORY -> P
+    com.google.gson.TypeAdapterFactory newEnumTypeHierarchyFactory() -> a
+    com.google.gson.TypeAdapterFactory newFactory(com.google.gson.reflect.TypeToken,com.google.gson.TypeAdapter) -> a
+    com.google.gson.TypeAdapterFactory newFactory(java.lang.Class,com.google.gson.TypeAdapter) -> a
+    com.google.gson.TypeAdapterFactory newFactory(java.lang.Class,java.lang.Class,com.google.gson.TypeAdapter) -> a
+    com.google.gson.TypeAdapterFactory newFactoryForMultipleTypes(java.lang.Class,java.lang.Class,com.google.gson.TypeAdapter) -> b
+    com.google.gson.TypeAdapterFactory newTypeHierarchyFactory(java.lang.Class,com.google.gson.TypeAdapter) -> b
+com.google.gson.internal.bind.TypeAdapters$1 -> com.a.a.b.a.B:
+    void write(com.google.gson.stream.JsonWriter,java.lang.Class) -> a
+    java.lang.Class read(com.google.gson.stream.JsonReader) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$10 -> com.a.a.b.a.C:
+    java.lang.Number read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$11 -> com.a.a.b.a.D:
+    java.lang.Number read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$12 -> com.a.a.b.a.E:
+    java.lang.Character read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Character) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$13 -> com.a.a.b.a.F:
+    java.lang.String read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.String) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$14 -> com.a.a.b.a.G:
+    java.lang.StringBuilder read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.StringBuilder) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$15 -> com.a.a.b.a.H:
+    java.lang.StringBuffer read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.StringBuffer) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$16 -> com.a.a.b.a.I:
+    java.net.URL read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.net.URL) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$17 -> com.a.a.b.a.J:
+    java.net.URI read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.net.URI) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$18 -> com.a.a.b.a.K:
+    java.net.InetAddress read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.net.InetAddress) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$19 -> com.a.a.b.a.L:
+    java.util.UUID read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.util.UUID) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$2 -> com.a.a.b.a.M:
+    java.util.BitSet read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.util.BitSet) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$20 -> com.a.a.b.a.N:
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.TypeAdapters$20$1 -> com.a.a.b.a.O:
+    com.google.gson.TypeAdapter val$dateTypeAdapter -> a
+    com.google.gson.internal.bind.TypeAdapters$20 this$0 -> b
+    java.sql.Timestamp read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.sql.Timestamp) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$21 -> com.a.a.b.a.P:
+    java.lang.String YEAR -> a
+    java.lang.String MONTH -> b
+    java.lang.String DAY_OF_MONTH -> c
+    java.lang.String HOUR_OF_DAY -> d
+    java.lang.String MINUTE -> e
+    java.lang.String SECOND -> f
+    java.util.Calendar read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.util.Calendar) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$22 -> com.a.a.b.a.Q:
+    java.util.Locale read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.util.Locale) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$23 -> com.a.a.b.a.R:
+    com.google.gson.JsonElement read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,com.google.gson.JsonElement) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$24 -> com.a.a.b.a.S:
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.TypeAdapters$25 -> com.a.a.b.a.T:
+    com.google.gson.reflect.TypeToken val$type -> a
+    com.google.gson.TypeAdapter val$typeAdapter -> b
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+com.google.gson.internal.bind.TypeAdapters$26 -> com.a.a.b.a.U:
+    java.lang.Class val$type -> a
+    com.google.gson.TypeAdapter val$typeAdapter -> b
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+    java.lang.String toString() -> toString
+com.google.gson.internal.bind.TypeAdapters$27 -> com.a.a.b.a.V:
+    java.lang.Class val$unboxed -> a
+    java.lang.Class val$boxed -> b
+    com.google.gson.TypeAdapter val$typeAdapter -> c
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+    java.lang.String toString() -> toString
+com.google.gson.internal.bind.TypeAdapters$28 -> com.a.a.b.a.W:
+    java.lang.Class val$base -> a
+    java.lang.Class val$sub -> b
+    com.google.gson.TypeAdapter val$typeAdapter -> c
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+    java.lang.String toString() -> toString
+com.google.gson.internal.bind.TypeAdapters$29 -> com.a.a.b.a.X:
+    java.lang.Class val$clazz -> a
+    com.google.gson.TypeAdapter val$typeAdapter -> b
+    com.google.gson.TypeAdapter create(com.google.gson.Gson,com.google.gson.reflect.TypeToken) -> a
+    java.lang.String toString() -> toString
+com.google.gson.internal.bind.TypeAdapters$3 -> com.a.a.b.a.Y:
+    java.lang.Boolean read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Boolean) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$30 -> com.a.a.b.a.Z:
+    int[] $SwitchMap$com$google$gson$stream$JsonToken -> a
+com.google.gson.internal.bind.TypeAdapters$4 -> com.a.a.b.a.aa:
+    java.lang.Boolean read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Boolean) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$5 -> com.a.a.b.a.ab:
+    java.lang.Number read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$6 -> com.a.a.b.a.ac:
+    java.lang.Number read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$7 -> com.a.a.b.a.ad:
+    java.lang.Number read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$8 -> com.a.a.b.a.ae:
+    java.lang.Number read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$9 -> com.a.a.b.a.af:
+    java.lang.Number read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Number) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter -> com.a.a.b.a.ag:
+    java.util.Map nameToConstant -> a
+    java.util.Map constantToName -> b
+    java.lang.Enum read(com.google.gson.stream.JsonReader) -> a
+    void write(com.google.gson.stream.JsonWriter,java.lang.Enum) -> a
+    java.lang.Object read(com.google.gson.stream.JsonReader) -> b
+    void write(com.google.gson.stream.JsonWriter,java.lang.Object) -> a
+com.google.gson.reflect.TypeToken -> com.a.a.c.a:
+    java.lang.Class rawType -> a
+    java.lang.reflect.Type type -> b
+    int hashCode -> c
+    java.lang.reflect.Type getSuperclassTypeParameter(java.lang.Class) -> a
+    java.lang.Class getRawType() -> a
+    java.lang.reflect.Type getType() -> b
+    boolean isAssignableFrom(java.lang.Class) -> b
+    boolean isAssignableFrom(java.lang.reflect.Type) -> a
+    boolean isAssignableFrom(com.google.gson.reflect.TypeToken) -> a
+    boolean isAssignableFrom(java.lang.reflect.Type,java.lang.reflect.GenericArrayType) -> a
+    boolean isAssignableFrom(java.lang.reflect.Type,java.lang.reflect.ParameterizedType,java.util.Map) -> a
+    boolean typeEquals(java.lang.reflect.ParameterizedType,java.lang.reflect.ParameterizedType,java.util.Map) -> a
+    java.lang.AssertionError buildUnexpectedTypeError(java.lang.reflect.Type,java.lang.Class[]) -> a
+    boolean matches(java.lang.reflect.Type,java.lang.reflect.Type,java.util.Map) -> a
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+    java.lang.String toString() -> toString
+    com.google.gson.reflect.TypeToken get(java.lang.reflect.Type) -> b
+    com.google.gson.reflect.TypeToken get(java.lang.Class) -> c
+com.google.gson.stream.JsonReader -> com.a.a.d.a:
+    char[] NON_EXECUTE_PREFIX -> a
+    java.lang.String TRUE -> b
+    java.lang.String FALSE -> c
+    com.google.gson.stream.StringPool stringPool -> d
+    java.io.Reader in -> e
+    boolean lenient -> f
+    char[] buffer -> g
+    int pos -> h
+    int limit -> i
+    int bufferStartLine -> j
+    int bufferStartColumn -> k
+    com.google.gson.stream.JsonScope[] stack -> l
+    int stackSize -> m
+    com.google.gson.stream.JsonToken token -> n
+    java.lang.String name -> o
+    java.lang.String value -> p
+    int valuePos -> q
+    int valueLength -> r
+    boolean skipping -> s
+    void setLenient(boolean) -> a
+    boolean isLenient() -> p
+    void beginArray() -> a
+    void endArray() -> b
+    void beginObject() -> c
+    void endObject() -> d
+    void expect(com.google.gson.stream.JsonToken) -> a
+    boolean hasNext() -> e
+    com.google.gson.stream.JsonToken peek() -> f
+    void consumeNonExecutePrefix() -> o
+    com.google.gson.stream.JsonToken advance() -> q
+    java.lang.String nextName() -> g
+    java.lang.String nextString() -> h
+    boolean nextBoolean() -> i
+    void nextNull() -> j
+    double nextDouble() -> k
+    long nextLong() -> l
+    int nextInt() -> m
+    void close() -> close
+    void skipValue() -> n
+    void push(com.google.gson.stream.JsonScope) -> a
+    com.google.gson.stream.JsonToken nextInArray(boolean) -> b
+    com.google.gson.stream.JsonToken nextInObject(boolean) -> c
+    com.google.gson.stream.JsonToken objectValue() -> r
+    com.google.gson.stream.JsonToken nextValue() -> s
+    boolean fillBuffer(int) -> a
+    int getLineNumber() -> t
+    int getColumnNumber() -> u
+    int nextNonWhitespace(boolean) -> d
+    void checkLenient() -> v
+    void skipToEndOfLine() -> w
+    boolean skipTo(java.lang.String) -> a
+    java.lang.String nextString(char) -> a
+    java.lang.String nextLiteral(boolean) -> e
+    java.lang.String toString() -> toString
+    char readEscapeCharacter() -> x
+    com.google.gson.stream.JsonToken readLiteral() -> y
+    com.google.gson.stream.JsonToken decodeLiteral() -> z
+    com.google.gson.stream.JsonToken decodeNumber(char[],int,int) -> a
+    java.io.IOException syntaxError(java.lang.String) -> b
+    java.lang.CharSequence getSnippet() -> A
+    com.google.gson.stream.JsonToken access$000(com.google.gson.stream.JsonReader) -> a
+    int access$100(com.google.gson.stream.JsonReader) -> b
+    int access$200(com.google.gson.stream.JsonReader) -> c
+    java.lang.String access$302(com.google.gson.stream.JsonReader,java.lang.String) -> a
+    java.lang.String access$400(com.google.gson.stream.JsonReader) -> d
+    java.lang.String access$402(com.google.gson.stream.JsonReader,java.lang.String) -> b
+    com.google.gson.stream.JsonToken access$002(com.google.gson.stream.JsonReader,com.google.gson.stream.JsonToken) -> a
+com.google.gson.stream.JsonReader$1 -> com.a.a.d.b:
+    void promoteNameToValue(com.google.gson.stream.JsonReader) -> a
+com.google.gson.stream.JsonReader$2 -> com.a.a.d.c:
+    int[] $SwitchMap$com$google$gson$stream$JsonScope -> a
+com.google.gson.stream.JsonScope -> com.a.a.d.d:
+    com.google.gson.stream.JsonScope EMPTY_ARRAY -> a
+    com.google.gson.stream.JsonScope NONEMPTY_ARRAY -> b
+    com.google.gson.stream.JsonScope EMPTY_OBJECT -> c
+    com.google.gson.stream.JsonScope DANGLING_NAME -> d
+    com.google.gson.stream.JsonScope NONEMPTY_OBJECT -> e
+    com.google.gson.stream.JsonScope EMPTY_DOCUMENT -> f
+    com.google.gson.stream.JsonScope NONEMPTY_DOCUMENT -> g
+    com.google.gson.stream.JsonScope CLOSED -> h
+    com.google.gson.stream.JsonScope[] $VALUES -> i
+    com.google.gson.stream.JsonScope[] values() -> values
+    com.google.gson.stream.JsonScope valueOf(java.lang.String) -> valueOf
+com.google.gson.stream.JsonToken -> com.a.a.d.e:
+    com.google.gson.stream.JsonToken BEGIN_ARRAY -> a
+    com.google.gson.stream.JsonToken END_ARRAY -> b
+    com.google.gson.stream.JsonToken BEGIN_OBJECT -> c
+    com.google.gson.stream.JsonToken END_OBJECT -> d
+    com.google.gson.stream.JsonToken NAME -> e
+    com.google.gson.stream.JsonToken STRING -> f
+    com.google.gson.stream.JsonToken NUMBER -> g
+    com.google.gson.stream.JsonToken BOOLEAN -> h
+    com.google.gson.stream.JsonToken NULL -> i
+    com.google.gson.stream.JsonToken END_DOCUMENT -> j
+    com.google.gson.stream.JsonToken[] $VALUES -> k
+    com.google.gson.stream.JsonToken[] values() -> values
+    com.google.gson.stream.JsonToken valueOf(java.lang.String) -> valueOf
+com.google.gson.stream.JsonWriter -> com.a.a.d.f:
+    java.io.Writer out -> a
+    java.util.List stack -> b
+    java.lang.String indent -> c
+    java.lang.String separator -> d
+    boolean lenient -> e
+    boolean htmlSafe -> f
+    java.lang.String deferredName -> g
+    boolean serializeNulls -> h
+    void setIndent(java.lang.String) -> c
+    void setLenient(boolean) -> b
+    boolean isLenient() -> h
+    void setHtmlSafe(boolean) -> c
+    boolean isHtmlSafe() -> i
+    void setSerializeNulls(boolean) -> d
+    boolean getSerializeNulls() -> j
+    com.google.gson.stream.JsonWriter beginArray() -> b
+    com.google.gson.stream.JsonWriter endArray() -> c
+    com.google.gson.stream.JsonWriter beginObject() -> d
+    com.google.gson.stream.JsonWriter endObject() -> e
+    com.google.gson.stream.JsonWriter open(com.google.gson.stream.JsonScope,java.lang.String) -> a
+    com.google.gson.stream.JsonWriter close(com.google.gson.stream.JsonScope,com.google.gson.stream.JsonScope,java.lang.String) -> a
+    com.google.gson.stream.JsonScope peek() -> a
+    void replaceTop(com.google.gson.stream.JsonScope) -> a
+    com.google.gson.stream.JsonWriter name(java.lang.String) -> a
+    void writeDeferredName() -> k
+    com.google.gson.stream.JsonWriter value(java.lang.String) -> b
+    com.google.gson.stream.JsonWriter nullValue() -> f
+    com.google.gson.stream.JsonWriter value(boolean) -> a
+    com.google.gson.stream.JsonWriter value(double) -> a
+    com.google.gson.stream.JsonWriter value(long) -> a
+    com.google.gson.stream.JsonWriter value(java.lang.Number) -> a
+    void flush() -> g
+    void close() -> close
+    void string(java.lang.String) -> d
+    void newline() -> l
+    void beforeName() -> m
+    void beforeValue(boolean) -> e
+com.google.gson.stream.JsonWriter$1 -> com.a.a.d.g:
+    int[] $SwitchMap$com$google$gson$stream$JsonScope -> a
+com.google.gson.stream.MalformedJsonException -> com.a.a.d.h:
+    long serialVersionUID -> a
+com.google.gson.stream.StringPool -> com.a.a.d.i:
+    java.lang.String[] pool -> a
+    java.lang.String get(char[],int,int) -> a
+com.whateversoft.BuildConfig -> com.whateversoft.a:
+    boolean DEBUG -> a
+com.whateversoft.R -> com.whateversoft.b:
+com.whateversoft.R$array -> com.whateversoft.c:
+    int bomb_input_method -> a
+    int bomb_input_method_desc -> b
+    int http_timeout -> c
+    int http_timeout_desc -> d
+    int initial_difficulty -> e
+    int lives_arcade_mode -> f
+    int music_playmodes -> g
+    int music_playmodes_desc -> h
+com.whateversoft.R$attr -> com.whateversoft.d:
+com.whateversoft.R$drawable -> com.whateversoft.e:
+    int ic_launcher -> a
+    int wireframe_disabled_trans -> b
+    int wireframe_green -> c
+    int wireframe_green_semitrans -> d
+    int wireframe_green_trans -> e
+com.whateversoft.R$id -> com.whateversoft.f:
+    int credits_desc_txt -> a
+    int credits_dialog -> b
+    int credits_ok_btn -> c
+    int credits_title_txt -> d
+    int game_results_dialog -> e
+    int gameres_again_button -> f
+    int gameres_bombsused_desc -> g
+    int gameres_bombsused_value -> h
+    int gameres_evadepercent_desc -> i
+    int gameres_evadepercent_value -> j
+    int gameres_game_results_txt -> k
+    int gameres_hs_button -> l
+    int gameres_level_desc -> m
+    int gameres_level_value -> n
+    int gameres_maxcombo_desc -> o
+    int gameres_maxcombo_value -> p
+    int gameres_mode_text -> q
+    int gameres_online_button -> r
+    int gameres_ranking_desc -> s
+    int gameres_ranking_value -> t
+    int gameres_score_desc -> u
+    int gameres_score_value -> v
+    int gameres_time_desc -> w
+    int gameres_time_value -> x
+    int gameres_title_button -> y
+    int prompt_confirm_ok_button -> z
+    int prompt_confirm_text -> A
+    int prompt_dual_1_button -> B
+    int prompt_dual_2_button -> C
+    int prompt_dual_layout -> D
+    int prompt_dual_text -> E
+    int prompt_highscore_cb_dontaskagain -> F
+    int prompt_highscore_entername_text -> G
+    int prompt_highscore_layout -> H
+    int prompt_highscore_nameedit -> I
+    int prompt_highscore_next_button -> J
+    int prompt_highscore_usedefaultname -> K
+    int prompt_input_edittxt -> L
+    int prompt_input_layout -> M
+    int prompt_input_ok_button -> N
+    int prompt_input_text -> O
+    int prompt_triple_1_button -> P
+    int prompt_triple_2_button -> Q
+    int prompt_triple_3_button -> R
+    int prompt_triple_layout -> S
+    int prompt_triple_text -> T
+    int seekBarPrefBarContainer -> U
+    int seekBarPrefValue -> V
+    int tutorial_desc_txt -> W
+    int tutorial_dialog -> X
+    int tutorial_ok_btn -> Y
+    int tutorial_title_txt -> Z
+com.whateversoft.R$layout -> com.whateversoft.g:
+    int confirm_dialog -> a
+    int credits_dialog -> b
+    int dual_dialog -> c
+    int game_results_dialog -> d
+    int highscore_dialog -> e
+    int input_dialog -> f
+    int main -> g
+    int seek_bar_preference -> h
+    int settings -> i
+    int triple_dialog -> j
+    int tutorial_dialog -> k
+com.whateversoft.R$raw -> com.whateversoft.h:
+    int cs_song1 -> a
+    int cs_song2 -> b
+    int cs_song3 -> c
+    int cs_song4 -> d
+    int cs_song5 -> e
+com.whateversoft.R$style -> com.whateversoft.i:
+    int ButtonViewStyle -> a
+    int EditTextStyle -> b
+    int TestStyle -> c
+    int TextViewStyle -> d
+    int Theme_NoBackground -> e
+    int TitleStyle -> f
+    int WireframeGreenSemiTrans -> g
+    int WireframeGreenTrans -> h
+com.whateversoft.android.framework.Anim -> com.whateversoft.android.framework.a:
+    int frameCount -> a
+    int frameCycleTo -> b
+    int frameSpeed -> c
+    com.whateversoft.android.framework.ImageFrame[] frames -> d
+com.whateversoft.android.framework.AnimEntity -> com.whateversoft.android.framework.b:
+    java.util.ArrayList anims -> a
+    int animIndex -> b
+    int animFrame -> c
+    long animLastTick -> d
+    boolean isAnimPaused -> e
+    boolean isAnimFinished -> f
+    void update(float) -> a
+    void animate(long) -> a
+    void resetAnim() -> a
+com.whateversoft.android.framework.Audio -> com.whateversoft.android.framework.c:
+    android.content.res.AssetFileDescriptor newMusic(java.lang.String) -> a
+    com.whateversoft.android.framework.Sound newSound(java.lang.String) -> b
+com.whateversoft.android.framework.FPSCounter -> com.whateversoft.android.framework.d:
+    long startTime -> a
+    int frames -> b
+    void logFrame() -> a
+com.whateversoft.android.framework.FileIO -> com.whateversoft.android.framework.e:
+    java.io.InputStream readAsset(java.lang.String) -> a
+    java.io.InputStream readFile(java.lang.String) -> b
+    java.io.OutputStream writeFile(java.lang.String) -> c
+com.whateversoft.android.framework.Game -> com.whateversoft.android.framework.f:
+    com.whateversoft.android.framework.Input getInput() -> a
+    com.whateversoft.android.framework.GamePreferences getPreferences() -> b
+    com.whateversoft.android.framework.Graphics getGraphics() -> c
+    com.whateversoft.android.framework.Audio getAudio() -> d
+    com.whateversoft.android.framework.FileIO getFileIO() -> e
+    void setScreen(com.whateversoft.android.framework.Screen) -> a
+    com.whateversoft.android.framework.Screen getCurrentScreen() -> f
+    com.whateversoft.android.framework.Screen getStartScreen() -> g
+    android.view.SurfaceView getRenderView() -> h
+    com.whateversoft.android.framework.MusicJukebox getMusic() -> i
+    boolean isMainRunning() -> j
+    boolean isPaused() -> k
+    void launchWebsite(java.lang.String) -> a
+    void startLoadingDialog(java.lang.String,java.lang.String,boolean) -> a
+    void stopLoadingDialog() -> l
+    com.whateversoft.android.framework.textui.Prompter getPrompter() -> m
+    void onSettingChanged(java.lang.String) -> b
+    void setScreenRes(int,int) -> a
+    void launchSettings() -> n
+    void pauseGame() -> o
+    void resumeGame() -> p
+    com.whateversoft.android.framework.impl.android.AndroidGameKeyboard getGameKeyboard() -> q
+com.whateversoft.android.framework.GamePreferences -> com.whateversoft.android.framework.g:
+    int getPref(java.lang.String,int) -> a
+    long getPref(java.lang.String,long) -> a
+    boolean getPref(java.lang.String,boolean) -> a
+    java.lang.String getPref(java.lang.String,java.lang.String) -> a
+    void setPref(java.lang.String,int) -> b
+    void setPref(java.lang.String,long) -> b
+    void setPref(java.lang.String,boolean) -> b
+    void setPref(java.lang.String,java.lang.String) -> b
+com.whateversoft.android.framework.Graphics -> com.whateversoft.android.framework.h:
+    com.whateversoft.android.framework.Pixmap newPixmap(java.lang.String,com.whateversoft.android.framework.Graphics$PixmapFormat) -> a
+    void clear(int) -> a
+    void drawPixel(int,int,int) -> a
+    void drawLine(int,int,int,int,int) -> a
+    void drawRect(int,int,int,int,int,boolean) -> a
+    void drawRect(android.graphics.Rect,int,boolean) -> a
+    void drawShape(android.graphics.Path) -> a
+    void drawText(java.lang.String,int,int,int,int,android.graphics.Typeface,android.graphics.Paint$Align) -> a
+    void drawText(java.lang.StringBuffer,int,int,int,int,android.graphics.Typeface,android.graphics.Paint$Align) -> a
+    void drawPixmap(com.whateversoft.android.framework.Pixmap,int,int,int,int,int,int) -> a
+    void drawPixmapAlpha(com.whateversoft.android.framework.Pixmap,int,int,int,int,int,int,int) -> a
+    void drawPixmap(com.whateversoft.android.framework.Pixmap,int,int,int,int) -> a
+    void drawPixmapAlpha(com.whateversoft.android.framework.Pixmap,int,int,int,int,int) -> a
+    void drawPixmapRotated(com.whateversoft.android.framework.Pixmap,int,int,int,int,int) -> b
+    void drawPixmapRotatedAlpha(com.whateversoft.android.framework.Pixmap,int,int,int,int,int,int) -> b
+    int getWidth() -> a
+    int getHeight() -> b
+    void drawPixmapScaled(com.whateversoft.android.framework.Pixmap,int,int,int,int,float) -> a
+    void setBitmapBuffer(android.graphics.Bitmap) -> a
+    void setAntiAlias(boolean) -> a
+com.whateversoft.android.framework.Graphics$PixmapFormat -> com.whateversoft.android.framework.i:
+    com.whateversoft.android.framework.Graphics$PixmapFormat ARGB8888 -> a
+    com.whateversoft.android.framework.Graphics$PixmapFormat ARGB4444 -> b
+    com.whateversoft.android.framework.Graphics$PixmapFormat RGB565 -> c
+    com.whateversoft.android.framework.Graphics$PixmapFormat[] ENUM$VALUES -> d
+    com.whateversoft.android.framework.Graphics$PixmapFormat[] values() -> values
+    com.whateversoft.android.framework.Graphics$PixmapFormat valueOf(java.lang.String) -> valueOf
+com.whateversoft.android.framework.ImageEntity -> com.whateversoft.android.framework.j:
+    com.whateversoft.android.framework.ImageFrame imgFrame -> g
+    int rotation -> h
+    int zoomPercentage -> i
+    boolean desaturatable -> j
+    float saturationValue -> k
+    void destroy() -> b
+    android.graphics.Rect getBounds() -> c
+com.whateversoft.android.framework.ImageFrame -> com.whateversoft.android.framework.k:
+    com.whateversoft.android.framework.Pixmap img -> a
+    int actionPointX -> b
+    int actionPointY -> c
+    com.whateversoft.android.framework.Pixmap getImg() -> a
+    android.graphics.Rect getImgBounds() -> b
+com.whateversoft.android.framework.Input -> com.whateversoft.android.framework.l:
+    boolean isKeyPressed(int) -> a
+    boolean isTouchDown(int) -> b
+    int getTouchX(int) -> c
+    int getTouchY(int) -> d
+    float getAccelX() -> a
+    float getAccelY() -> b
+    float getAccelZ() -> c
+    java.util.List getKeyEvents() -> d
+    java.util.List getTouchEvents() -> e
+    void setTouchScale(float,float) -> a
+com.whateversoft.android.framework.Input$KeyEvent -> com.whateversoft.android.framework.m:
+    int KEY_DOWN -> a
+    int KEY_UP -> b
+    int type -> c
+    int keyCode -> d
+    int keyChar -> e
+com.whateversoft.android.framework.Input$TouchEvent -> com.whateversoft.android.framework.n:
+    int TOUCH_DOWN -> a
+    int TOUCH_UP -> b
+    int TOUCH_DRAGGED -> c
+    int type -> d
+    int x -> e
+    int y -> f
+    int pointer -> g
+com.whateversoft.android.framework.MusicJukebox -> com.whateversoft.android.framework.o:
+    void setPlayMode(com.whateversoft.android.framework.MusicJukebox$PlayMode) -> a
+    void setTrackResources(int[]) -> a
+    void play() -> a
+    void stop() -> b
+    void activityPauseCycle(boolean) -> a
+    int nextTrack() -> c
+    int nextRandomTrack() -> d
+    boolean setTrack(int) -> a
+    void releaseMusic() -> e
+    void setTrackAsEnabled(int,boolean) -> a
+com.whateversoft.android.framework.MusicJukebox$PlayMode -> com.whateversoft.android.framework.p:
+    com.whateversoft.android.framework.MusicJukebox$PlayMode NO_MUSIC -> a
+    com.whateversoft.android.framework.MusicJukebox$PlayMode PLAY_SINGLE -> b
+    com.whateversoft.android.framework.MusicJukebox$PlayMode LOOP_SINGLE -> c
+    com.whateversoft.android.framework.MusicJukebox$PlayMode LOOP_ALL -> d
+    com.whateversoft.android.framework.MusicJukebox$PlayMode SHUFFLE -> e
+    com.whateversoft.android.framework.MusicJukebox$PlayMode[] ENUM$VALUES -> f
+    com.whateversoft.android.framework.MusicJukebox$PlayMode[] values() -> values
+    com.whateversoft.android.framework.MusicJukebox$PlayMode valueOf(java.lang.String) -> valueOf
+com.whateversoft.android.framework.ObjectFactory -> com.whateversoft.android.framework.q:
+    java.util.ArrayList objectPool -> a
+    java.lang.Object retrieveInstance() -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.android.framework.Pixmap -> com.whateversoft.android.framework.r:
+    int getWidth() -> a
+    int getHeight() -> b
+    com.whateversoft.android.framework.Graphics$PixmapFormat getFormat() -> c
+    void dispose() -> d
+com.whateversoft.android.framework.Pool -> com.whateversoft.android.framework.s:
+    java.util.List freeObjects -> a
+    com.whateversoft.android.framework.Pool$PoolObjectFactory factory -> b
+    int maxSize -> c
+    java.lang.Object newObject() -> a
+    void free(java.lang.Object) -> a
+com.whateversoft.android.framework.Pool$PoolObjectFactory -> com.whateversoft.android.framework.t:
+    java.lang.Object createObject() -> a
+com.whateversoft.android.framework.RectEntity -> com.whateversoft.android.framework.u:
+    android.graphics.Rect rect -> a
+    int color -> b
+    boolean fill -> c
+    android.graphics.Rect getBounds() -> c
+com.whateversoft.android.framework.Screen -> com.whateversoft.android.framework.v:
+    int FPS -> a
+    int TIME_INTERVAL -> b
+    com.whateversoft.android.framework.ScreenAssets assets -> c
+    int fadeInTimer -> d
+    float gameTimer -> e
+    int fadeOutTimer -> f
+    com.whateversoft.android.framework.Screen nextScreen -> g
+    int layerCount -> h
+    long lastLogicTick -> i
+    boolean enableZooming -> j
+    com.whateversoft.android.framework.FPSCounter fpsCounter -> k
+    int debugRotateMatrix -> l
+    int[] touchTimer -> m
+    int[] touchLength -> n
+    int POINTER_1_OFFSET -> o
+    android.graphics.Point[] touchPoints -> p
+    com.whateversoft.android.framework.Game game -> q
+    java.util.ArrayList[] entities -> r
+    int backPressed -> s
+    boolean fadingIn -> t
+    boolean fadingOut -> u
+    void update(float) -> a
+    void timedLogic() -> a
+    void present() -> b
+    void pause() -> c
+    void resume() -> d
+    void dispose() -> e
+    void onLoadingDialogCanceled() -> f
+    void backPressed() -> g
+    void screenTapped() -> h
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    void fadeInLogic(float) -> b
+    void goToScreen(com.whateversoft.android.framework.Screen) -> a
+    void completeFadeOut() -> i
+    void fadeOutLogic(float) -> c
+    int getScreenCode() -> j
+com.whateversoft.android.framework.ScreenAssets -> com.whateversoft.android.framework.w:
+    java.lang.Object[] assets -> a
+    com.whateversoft.android.framework.Game game -> b
+    void obtainAssets() -> a
+    void freeAssets() -> b
+    java.lang.Object getAsset(int,java.lang.Object) -> a
+    com.whateversoft.android.framework.Sound getSound(int) -> a
+    com.whateversoft.android.framework.Anim getAnim(int) -> b
+    com.whateversoft.android.framework.ImageFrame getImage(int) -> c
+    com.whateversoft.android.framework.ImageFrame[] getImageArray(int) -> d
+    com.whateversoft.android.framework.ImageFrame getImageInArray(int,int) -> a
+    void setImageInArray(int,int,com.whateversoft.android.framework.ImageFrame) -> a
+    com.whateversoft.android.framework.Pixmap getPixmap(int) -> e
+    android.graphics.Typeface getFont(int) -> f
+com.whateversoft.android.framework.ScreenEntity -> com.whateversoft.android.framework.x:
+    float x -> l
+    float y -> m
+    float dx -> n
+    float dy -> o
+    int layer -> p
+    com.whateversoft.android.framework.Screen screen -> q
+    boolean destroyed -> r
+    boolean visible -> s
+    boolean semiTrans -> t
+    boolean updatingEntity -> u
+    int alpha -> v
+    boolean touchable -> w
+    boolean touched -> x
+    boolean touchJustReleased -> y
+    int touchTimer -> z
+    void touched(boolean) -> a
+    void update(float) -> a
+    android.graphics.Rect getBounds() -> c
+    void destroy() -> b
+com.whateversoft.android.framework.ScreenInfo -> com.whateversoft.android.framework.y:
+    int virtualWidth -> a
+    int virtualHeight -> b
+    com.whateversoft.android.framework.ScreenInfo$VirtualResolution virtualRes -> c
+com.whateversoft.android.framework.ScreenInfo$VirtualResolution -> com.whateversoft.android.framework.z:
+    com.whateversoft.android.framework.ScreenInfo$VirtualResolution R800X480 -> a
+    com.whateversoft.android.framework.ScreenInfo$VirtualResolution R720X480 -> b
+    com.whateversoft.android.framework.ScreenInfo$VirtualResolution R680X480 -> c
+    com.whateversoft.android.framework.ScreenInfo$VirtualResolution[] ENUM$VALUES -> d
+    com.whateversoft.android.framework.ScreenInfo$VirtualResolution[] values() -> values
+    com.whateversoft.android.framework.ScreenInfo$VirtualResolution valueOf(java.lang.String) -> valueOf
+com.whateversoft.android.framework.ShapeEntity -> com.whateversoft.android.framework.A:
+    android.graphics.drawable.ShapeDrawable shape -> a
+    int color -> b
+    android.graphics.Rect getBounds() -> c
+com.whateversoft.android.framework.Sound -> com.whateversoft.android.framework.B:
+    void play(float) -> a
+    void dispose() -> a
+com.whateversoft.android.framework.TextEntity -> com.whateversoft.android.framework.C:
+    java.lang.StringBuffer string -> a
+    int color -> b
+    int size -> c
+    int strLength -> d
+    android.graphics.Typeface font -> e
+    int width -> f
+    android.graphics.Paint$Align align -> g
+    int getWidth() -> a
+    android.graphics.Rect getBounds() -> c
+com.whateversoft.android.framework.TouchableEntity -> com.whateversoft.android.framework.D:
+com.whateversoft.android.framework.impl.android.AccelerometerHandler -> com.whateversoft.android.framework.impl.android.a:
+    float accelX -> a
+    float accelY -> b
+    float accelZ -> c
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    float getAccelX() -> a
+    float getAccelY() -> b
+    float getAccelZ() -> c
+com.whateversoft.android.framework.impl.android.AndroidAudio -> com.whateversoft.android.framework.impl.android.b:
+    android.content.res.AssetManager assets -> a
+    android.media.SoundPool soundPool -> b
+    com.whateversoft.android.framework.Game game -> c
+    android.content.res.AssetFileDescriptor newMusic(java.lang.String) -> a
+    com.whateversoft.android.framework.Sound newSound(java.lang.String) -> b
+com.whateversoft.android.framework.impl.android.AndroidFastRenderView -> com.whateversoft.android.framework.impl.android.c:
+    com.whateversoft.android.framework.impl.android.CanvasGame game -> a
+    android.graphics.Bitmap frameBuffer -> b
+    java.lang.Thread renderThread -> c
+    android.view.SurfaceHolder holder -> d
+    boolean running -> e
+    long startTime -> f
+    long deltaTime -> g
+    long pauseStarted -> h
+    long pauseTimeElapsed -> i
+    boolean gameJustUnpaused -> j
+    boolean gamePaused -> k
+    android.graphics.Paint screenPainter -> l
+    android.content.Context context -> m
+    void resume() -> a
+    void run() -> run
+    void pause() -> b
+    void setFrameBuffer(android.graphics.Bitmap) -> a
+    void pauseGameWhileRunning() -> c
+    void resumeGameWhileRunning() -> d
+com.whateversoft.android.framework.impl.android.AndroidFileIO -> com.whateversoft.android.framework.impl.android.d:
+    android.content.res.AssetManager assets -> a
+    java.lang.String externalStoragePath -> b
+    java.io.InputStream readFile(java.lang.String) -> b
+    java.io.InputStream readAsset(java.lang.String) -> a
+    java.io.OutputStream writeFile(java.lang.String) -> c
+com.whateversoft.android.framework.impl.android.AndroidGameKeyboard -> com.whateversoft.android.framework.impl.android.e:
+    int[] keysMonitored -> a
+    java.util.Map keyStatus -> b
+    com.whateversoft.android.framework.Game game -> c
+    void update() -> a
+    int getKeyStatus(int) -> a
+com.whateversoft.android.framework.impl.android.AndroidGamePreferences -> com.whateversoft.android.framework.impl.android.f:
+    android.content.Context context -> a
+    int getPref(java.lang.String,int) -> a
+    long getPref(java.lang.String,long) -> a
+    boolean getPref(java.lang.String,boolean) -> a
+    java.lang.String getPref(java.lang.String,java.lang.String) -> a
+    void setPref(java.lang.String,int) -> b
+    void setPref(java.lang.String,long) -> b
+    void setPref(java.lang.String,boolean) -> b
+    void setPref(java.lang.String,java.lang.String) -> b
+com.whateversoft.android.framework.impl.android.AndroidGraphics -> com.whateversoft.android.framework.impl.android.g:
+    android.content.res.AssetManager assets -> a
+    android.graphics.Bitmap frameBuffer -> b
+    android.graphics.Canvas canvas -> c
+    android.graphics.Paint paint -> d
+    android.graphics.Rect srcRect -> e
+    android.graphics.Rect dstRect -> f
+    com.whateversoft.android.framework.Pixmap newPixmap(android.graphics.Bitmap,com.whateversoft.android.framework.Graphics$PixmapFormat) -> a
+    com.whateversoft.android.framework.Pixmap newPixmap(java.lang.String,com.whateversoft.android.framework.Graphics$PixmapFormat) -> a
+    void clear(int) -> a
+    void drawPixel(int,int,int) -> a
+    void drawLine(int,int,int,int,int) -> a
+    void drawRect(int,int,int,int,int,boolean) -> a
+    void drawPixmap(com.whateversoft.android.framework.Pixmap,int,int,int,int,int,int) -> a
+    void drawPixmap(com.whateversoft.android.framework.Pixmap,int,int,int,int) -> a
+    void drawPixmapScaled(com.whateversoft.android.framework.Pixmap,int,int,int,int,float) -> a
+    void drawPixmapRotated(com.whateversoft.android.framework.Pixmap,int,int,int,int,int) -> b
+    void drawPixmapAlpha(com.whateversoft.android.framework.Pixmap,int,int,int,int,int) -> a
+    void drawPixmapRotatedAlpha(com.whateversoft.android.framework.Pixmap,int,int,int,int,int,int) -> b
+    void drawPixmapAlpha(com.whateversoft.android.framework.Pixmap,int,int,int,int,int,int,int) -> a
+    void drawShape(android.graphics.Path) -> a
+    void drawText(java.lang.StringBuffer,int,int,int,int,android.graphics.Typeface,android.graphics.Paint$Align) -> a
+    void drawText(java.lang.String,int,int,int,int,android.graphics.Typeface,android.graphics.Paint$Align) -> a
+    int getWidth() -> a
+    int getHeight() -> b
+    void drawRect(android.graphics.Rect,int,boolean) -> a
+    void setBitmapBuffer(android.graphics.Bitmap) -> a
+    android.graphics.Paint getPainter() -> c
+    void setAntiAlias(boolean) -> a
+com.whateversoft.android.framework.impl.android.AndroidInput -> com.whateversoft.android.framework.impl.android.h:
+    com.whateversoft.android.framework.impl.android.AccelerometerHandler accelHandler -> a
+    com.whateversoft.android.framework.impl.android.KeyboardHandler keyHandler -> b
+    com.whateversoft.android.framework.impl.android.TouchHandler touchHandler -> c
+    android.view.View parentView -> d
+    boolean isKeyPressed(int) -> a
+    boolean isTouchDown(int) -> b
+    int getTouchX(int) -> c
+    int getTouchY(int) -> d
+    float getAccelX() -> a
+    float getAccelY() -> b
+    float getAccelZ() -> c
+    java.util.List getKeyEvents() -> d
+    java.util.List getTouchEvents() -> e
+    void setTouchScale(float,float) -> a
+com.whateversoft.android.framework.impl.android.AndroidPixmap -> com.whateversoft.android.framework.impl.android.i:
+    android.graphics.Bitmap bitmap -> a
+    com.whateversoft.android.framework.Graphics$PixmapFormat format -> b
+    android.graphics.Bitmap getBmp() -> e
+    com.whateversoft.android.framework.Graphics$PixmapFormat getFormat() -> c
+    int getWidth() -> a
+    int getHeight() -> b
+    void dispose() -> d
+com.whateversoft.android.framework.impl.android.AndroidSound -> com.whateversoft.android.framework.impl.android.j:
+    int soundId -> a
+    android.media.SoundPool soundPool -> b
+    void play(float) -> a
+    void dispose() -> a
+com.whateversoft.android.framework.impl.android.CanvasGame -> com.whateversoft.android.framework.impl.android.CanvasGame:
+    com.whateversoft.android.framework.impl.android.CanvasGame game -> a_
+    com.whateversoft.android.framework.impl.android.AndroidFastRenderView renderView -> b
+    com.whateversoft.android.framework.Graphics graphics -> c
+    com.whateversoft.android.framework.Audio audio -> d
+    com.whateversoft.android.framework.Input input -> e
+    com.whateversoft.android.framework.FileIO fileIO -> f
+    com.whateversoft.android.framework.Screen screen -> g
+    android.os.PowerManager$WakeLock wakeLock -> h
+    java.lang.Thread mainUIThread -> i
+    android.app.ProgressDialog progressDialog -> j
+    com.whateversoft.android.framework.impl.android.AndroidGameKeyboard gameKeyboard -> k
+    com.whateversoft.android.framework.impl.android.AndroidGamePreferences preferences -> l
+    com.whateversoft.android.framework.textui.PrompterAndroid prompter -> m
+    android.os.Handler handler -> n
+    boolean mainRunning -> o
+    boolean paused -> p
+    int[] $SWITCH_TABLE$com$whateversoft$android$framework$ScreenInfo$VirtualResolution -> q
+    void setScreenRes(int,int) -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    com.whateversoft.android.framework.Input getInput() -> a
+    com.whateversoft.android.framework.FileIO getFileIO() -> e
+    com.whateversoft.android.framework.GamePreferences getPreferences() -> b
+    com.whateversoft.android.framework.Graphics getGraphics() -> c
+    com.whateversoft.android.framework.Audio getAudio() -> d
+    void setScreen(com.whateversoft.android.framework.Screen) -> a
+    com.whateversoft.android.framework.impl.android.AndroidFastRenderView getRenderView() -> r
+    com.whateversoft.android.framework.Screen getCurrentScreen() -> f
+    boolean isMainRunning() -> j
+    boolean isPaused() -> k
+    void launchWebsite(java.lang.String) -> a
+    void startLoadingDialog(java.lang.String,java.lang.String,boolean) -> a
+    void stopLoadingDialog() -> l
+    com.whateversoft.android.framework.textui.Prompter getPrompter() -> m
+    com.whateversoft.android.framework.impl.android.AndroidGameKeyboard getGameKeyboard() -> q
+    void pauseGame() -> o
+    void resumeGame() -> p
+    android.view.SurfaceView getRenderView() -> h
+    int[] $SWITCH_TABLE$com$whateversoft$android$framework$ScreenInfo$VirtualResolution() -> s
+com.whateversoft.android.framework.impl.android.CanvasGame$1 -> com.whateversoft.android.framework.impl.android.k:
+    com.whateversoft.android.framework.impl.android.CanvasGame this$0 -> a
+    boolean val$cancelable -> b
+    java.lang.String val$title -> c
+    java.lang.String val$msg -> d
+    void run() -> run
+    com.whateversoft.android.framework.impl.android.CanvasGame access$0(com.whateversoft.android.framework.impl.android.CanvasGame$1) -> a
+com.whateversoft.android.framework.impl.android.CanvasGame$1$1 -> com.whateversoft.android.framework.impl.android.l:
+    com.whateversoft.android.framework.impl.android.CanvasGame$1 this$1 -> a
+    void onBackPressed() -> onBackPressed
+com.whateversoft.android.framework.impl.android.DeviceIDManager -> com.whateversoft.android.framework.impl.android.m:
+    java.lang.String sID -> a
+    java.lang.String INSTALLATION -> b
+    java.lang.String id(android.content.Context) -> a
+    java.lang.String readInstallationFile(java.io.File) -> a
+    void writeInstallationFile(java.io.File) -> b
+com.whateversoft.android.framework.impl.android.GLGraphics -> com.whateversoft.android.framework.impl.android.n:
+    android.opengl.GLSurfaceView glView -> a
+    javax.microedition.khronos.opengles.GL10 gl -> b
+    javax.microedition.khronos.opengles.GL10 getGL() -> a
+    void setGL(javax.microedition.khronos.opengles.GL10) -> a
+    int getWidth() -> b
+    int getHeight() -> c
+com.whateversoft.android.framework.impl.android.GameDialog -> com.whateversoft.android.framework.impl.android.o:
+    com.whateversoft.android.framework.impl.android.CanvasGame context -> a
+    void onStop() -> onStop
+com.whateversoft.android.framework.impl.android.KeyboardHandler -> com.whateversoft.android.framework.impl.android.p:
+    boolean[] pressedKeys -> a
+    com.whateversoft.android.framework.Pool keyEventPool -> b
+    java.util.List keyEventsBuffer -> c
+    java.util.List keyEvents -> d
+    boolean isKeyPressed(int) -> a
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+    java.util.List getKeyEvents() -> a
+com.whateversoft.android.framework.impl.android.KeyboardHandler$1 -> com.whateversoft.android.framework.impl.android.q:
+    com.whateversoft.android.framework.impl.android.KeyboardHandler this$0 -> a
+    com.whateversoft.android.framework.Input$KeyEvent createObject() -> b
+    java.lang.Object createObject() -> a
+com.whateversoft.android.framework.impl.android.MultiTouchHandler -> com.whateversoft.android.framework.impl.android.r:
+    boolean[] isTouched -> a
+    int[] touchX -> b
+    int[] touchY -> c
+    com.whateversoft.android.framework.Pool touchEventPool -> d
+    java.util.List touchEvents -> e
+    java.util.List touchEventsBuffer -> f
+    float scaleX -> g
+    float scaleY -> h
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    boolean isTouchDown(int) -> a
+    int getTouchX(int) -> b
+    int getTouchY(int) -> c
+    java.util.List getTouchEvents() -> a
+    void setScale(float,float) -> a
+com.whateversoft.android.framework.impl.android.MultiTouchHandler$1 -> com.whateversoft.android.framework.impl.android.s:
+    com.whateversoft.android.framework.impl.android.MultiTouchHandler this$0 -> a
+    com.whateversoft.android.framework.Input$TouchEvent createObject() -> b
+    java.lang.Object createObject() -> a
+com.whateversoft.android.framework.impl.android.MusicHandlerAndroid -> com.whateversoft.android.framework.impl.android.t:
+    int NO_MUSIC_LOADED -> a
+    android.media.MediaPlayer mediaPlayer -> b
+    boolean isPaused -> c
+    boolean isPlaying -> d
+    android.content.Context context -> e
+    int seekPosition -> f
+    int resourceId -> g
+    boolean loopingEnabled -> h
+    void setResource(int) -> a
+    boolean play() -> a
+    void pause() -> b
+    void stop() -> c
+    void release() -> d
+    void activityPauseCycle(boolean) -> a
+    android.media.MediaPlayer getMediaPlaying() -> e
+    boolean isPaused() -> f
+    boolean isPlaying() -> g
+    boolean isFileLoaded() -> h
+    boolean access$0(com.whateversoft.android.framework.impl.android.MusicHandlerAndroid) -> a
+com.whateversoft.android.framework.impl.android.MusicHandlerAndroid$1 -> com.whateversoft.android.framework.impl.android.u:
+    com.whateversoft.android.framework.impl.android.MusicHandlerAndroid this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid -> com.whateversoft.android.framework.impl.android.v:
+    com.whateversoft.android.framework.impl.android.CanvasGame game -> a
+    java.util.Random rand -> b
+    com.whateversoft.android.framework.MusicJukebox$PlayMode playMode -> c
+    com.whateversoft.android.framework.impl.android.MusicHandlerAndroid musicPlayer -> e
+    int[] trackResourceList -> f
+    boolean[] trackEnabledList -> g
+    int currentTrackNo -> h
+    android.media.MediaPlayer$OnCompletionListener loopSingleListener -> d
+    int[] $SWITCH_TABLE$com$whateversoft$android$framework$MusicJukebox$PlayMode -> i
+    void setPlayMode(com.whateversoft.android.framework.MusicJukebox$PlayMode) -> a
+    void setTrackAsEnabled(int,boolean) -> a
+    void setTrackResources(int[]) -> a
+    void activityPauseCycle(boolean) -> a
+    void play() -> a
+    void stop() -> b
+    int nextTrack() -> c
+    int nextRandomTrack() -> d
+    boolean setTrack(int) -> a
+    void releaseMusic() -> e
+    com.whateversoft.android.framework.impl.android.MusicHandlerAndroid access$0(com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid) -> a
+    int access$1(com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid) -> b
+    int[] $SWITCH_TABLE$com$whateversoft$android$framework$MusicJukebox$PlayMode() -> f
+com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid$1 -> com.whateversoft.android.framework.impl.android.w:
+    com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid$2 -> com.whateversoft.android.framework.impl.android.x:
+    com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid$3 -> com.whateversoft.android.framework.impl.android.y:
+    com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid$4 -> com.whateversoft.android.framework.impl.android.z:
+    com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid$5 -> com.whateversoft.android.framework.impl.android.A:
+    com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid this$0 -> a
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+com.whateversoft.android.framework.impl.android.SingleTouchHandler -> com.whateversoft.android.framework.impl.android.B:
+    boolean isTouched -> a
+    int touchX -> b
+    int touchY -> c
+    com.whateversoft.android.framework.Pool touchEventPool -> d
+    java.util.List touchEvents -> e
+    java.util.List touchEventsBuffer -> f
+    float scaleX -> g
+    float scaleY -> h
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    boolean isTouchDown(int) -> a
+    int getTouchX(int) -> b
+    int getTouchY(int) -> c
+    java.util.List getTouchEvents() -> a
+    void setScale(float,float) -> a
+com.whateversoft.android.framework.impl.android.SingleTouchHandler$1 -> com.whateversoft.android.framework.impl.android.C:
+    com.whateversoft.android.framework.impl.android.SingleTouchHandler this$0 -> a
+    com.whateversoft.android.framework.Input$TouchEvent createObject() -> b
+    java.lang.Object createObject() -> a
+com.whateversoft.android.framework.impl.android.SystemInfo -> com.whateversoft.android.framework.impl.android.D:
+    boolean isGoogleTV -> a
+    boolean hasTouchInput -> b
+    void initialize(android.content.Context) -> a
+    boolean isGoogleTV() -> a
+    boolean hasTouchInput() -> b
+com.whateversoft.android.framework.impl.android.TouchHandler -> com.whateversoft.android.framework.impl.android.E:
+    boolean isTouchDown(int) -> a
+    int getTouchX(int) -> b
+    int getTouchY(int) -> c
+    java.util.List getTouchEvents() -> a
+    void setScale(float,float) -> a
+com.whateversoft.android.framework.impl.android.network.HTMLParser -> com.whateversoft.android.framework.impl.android.a.a:
+    java.lang.String clearHTMLTags(java.lang.String) -> a
+com.whateversoft.android.framework.impl.android.network.HttpClientApp -> com.whateversoft.android.framework.impl.android.a.b:
+    int REQUEST_FAILED -> b_
+    void onServerResponse(com.whateversoft.android.framework.impl.android.network.HttpRequestTask,int,java.lang.String) -> a
+    void onRequestTimeout(com.whateversoft.android.framework.impl.android.network.HttpRequestTask) -> a
+    void showServerErrorMsg() -> a_
+com.whateversoft.android.framework.impl.android.network.HttpRequestTask -> com.whateversoft.android.framework.impl.android.a.c:
+    com.whateversoft.android.framework.impl.android.network.HttpClientApp callerApp -> a
+    java.lang.String TAG -> b
+    com.whateversoft.android.framework.impl.android.network.HttpTimerTask timerTask -> c
+    int httpMethod -> d
+    java.lang.String requestURL -> e
+    java.util.List values -> f
+    long serverTimeoutMs -> g
+    long requestTime -> h
+    int HTTP_GET -> i
+    int HTTP_POST -> j
+    java.lang.String doInBackground(java.lang.String[]) -> a
+    java.lang.String makeHttpRequest() -> a
+    void onCancelled() -> onCancelled
+    void onPostExecute(java.lang.String) -> a
+    int getResponseCode() -> b
+    int getRequestMethod() -> c
+    java.lang.String getRequestURL() -> d
+    java.util.List getAttachedData() -> e
+    java.lang.String getDataTokenStr() -> f
+    long getRequestTimeMs() -> g
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.whateversoft.android.framework.impl.android.network.HttpTimerTask -> com.whateversoft.android.framework.impl.android.a.d:
+    long serverTimeoutMs -> a
+    long requestTime -> b
+    com.whateversoft.android.framework.impl.android.network.HttpRequestTask callerRequest -> c
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onCancelled() -> onCancelled
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.whateversoft.android.framework.impl.android.network.HttpTools -> com.whateversoft.android.framework.impl.android.a.e:
+    com.google.gson.Gson gson -> a
+    org.apache.http.client.HttpClient client -> b
+    com.whateversoft.android.framework.impl.android.network.HTMLParser htmlParser -> c
+com.whateversoft.android.framework.textui.ConfirmDialog -> com.whateversoft.android.framework.a.a:
+    android.widget.TextView messageTV -> b
+    android.graphics.Typeface dialogFont -> c
+    void onBackPressed() -> onBackPressed
+com.whateversoft.android.framework.textui.ConfirmDialog$1 -> com.whateversoft.android.framework.a.b:
+    com.whateversoft.android.framework.textui.ConfirmDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.android.framework.textui.ConsoleText -> com.whateversoft.android.framework.a.c:
+    java.lang.String[] getRecentLines(int) -> a
+    void addStringLineByLine(java.lang.String) -> a
+com.whateversoft.android.framework.textui.DualDialog -> com.whateversoft.android.framework.a.d:
+    android.widget.TextView messageTV -> b
+    android.widget.Button button1 -> c
+    android.widget.Button button2 -> d
+    android.graphics.Typeface dialogFont -> e
+com.whateversoft.android.framework.textui.DualDialog$1 -> com.whateversoft.android.framework.a.e:
+    com.whateversoft.android.framework.textui.DualDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.android.framework.textui.DualDialog$2 -> com.whateversoft.android.framework.a.f:
+    com.whateversoft.android.framework.textui.DualDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.android.framework.textui.InputDialog -> com.whateversoft.android.framework.a.g:
+    android.graphics.Typeface dialogFont -> b
+com.whateversoft.android.framework.textui.InputDialog$1 -> com.whateversoft.android.framework.a.h:
+    com.whateversoft.android.framework.textui.InputDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    android.widget.EditText val$userInput -> c
+    java.lang.Thread val$threadRunning -> d
+    void onClick(android.view.View) -> onClick
+com.whateversoft.android.framework.textui.PromptLogic -> com.whateversoft.android.framework.a.i:
+    java.lang.Boolean yesNoQuestion(java.lang.String) -> a
+    int optionSelection(java.lang.String,java.lang.String[]) -> a
+com.whateversoft.android.framework.textui.Prompter -> com.whateversoft.android.framework.a.j:
+    void showMsg(java.lang.StringBuilder) -> a
+    java.lang.String showInputPrompt(java.lang.StringBuilder) -> b
+    int showTripleOption(java.lang.StringBuilder,java.lang.StringBuilder,java.lang.StringBuilder,java.lang.StringBuilder) -> a
+    int showDualOption(java.lang.StringBuilder,java.lang.StringBuilder,java.lang.StringBuilder) -> a
+com.whateversoft.android.framework.textui.PrompterAndroid -> com.whateversoft.android.framework.a.k:
+    boolean promptGiven -> a
+    boolean promptCompleted -> b
+    boolean promptIsShown -> c
+    java.lang.String userInput -> d
+    java.lang.String promptTitle -> e
+    java.lang.String promptMessage -> f
+    int returnedValue -> g
+    android.app.Dialog displayedDialog -> h
+    int RESULT_OK -> i
+    int CONFIRM_PROMPT -> j
+    int INPUT_PROMPT -> k
+    int DUAL_PROMPT -> l
+    int TRIPLE_PROMPT -> m
+    com.whateversoft.android.framework.impl.android.CanvasGame context -> n
+    java.lang.String showInputPrompt(java.lang.StringBuilder) -> b
+    void showMsg(java.lang.StringBuilder) -> a
+    int showDualOption(java.lang.StringBuilder,java.lang.StringBuilder,java.lang.StringBuilder) -> a
+    int showTripleOption(java.lang.StringBuilder,java.lang.StringBuilder,java.lang.StringBuilder,java.lang.StringBuilder) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    android.app.Dialog getDisplayedDialog() -> a
+    int getReturnedValue() -> b
+com.whateversoft.android.framework.textui.PrompterAndroid$1 -> com.whateversoft.android.framework.a.l:
+    com.whateversoft.android.framework.textui.PrompterAndroid this$0 -> a
+    android.app.Dialog val$prompt -> b
+    void run() -> run
+com.whateversoft.android.framework.textui.PrompterAndroid$2 -> com.whateversoft.android.framework.a.m:
+    com.whateversoft.android.framework.textui.PrompterAndroid this$0 -> a
+    android.app.Dialog val$prompt -> b
+    void run() -> run
+com.whateversoft.android.framework.textui.PrompterAndroid$3 -> com.whateversoft.android.framework.a.n:
+    com.whateversoft.android.framework.textui.PrompterAndroid this$0 -> a
+    android.app.Dialog val$prompt -> b
+    void run() -> run
+com.whateversoft.android.framework.textui.PrompterAndroid$4 -> com.whateversoft.android.framework.a.o:
+    com.whateversoft.android.framework.textui.PrompterAndroid this$0 -> a
+    android.app.Dialog val$prompt -> b
+    void run() -> run
+com.whateversoft.android.framework.textui.TripleDialog -> com.whateversoft.android.framework.a.p:
+    android.widget.TextView messageTV -> b
+    android.widget.Button button1 -> c
+    android.widget.Button button2 -> d
+    android.graphics.Typeface dialogFont -> e
+com.whateversoft.android.framework.textui.TripleDialog$1 -> com.whateversoft.android.framework.a.q:
+    com.whateversoft.android.framework.textui.TripleDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.android.framework.textui.TripleDialog$2 -> com.whateversoft.android.framework.a.r:
+    com.whateversoft.android.framework.textui.TripleDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.android.framework.textui.TripleDialog$3 -> com.whateversoft.android.framework.a.s:
+    com.whateversoft.android.framework.textui.TripleDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.android.license.util.Base64 -> com.whateversoft.android.a.a.a:
+    boolean ENCODE -> a
+    boolean DECODE -> b
+    byte EQUALS_SIGN -> d
+    byte NEW_LINE -> e
+    byte[] ALPHABET -> f
+    byte[] WEBSAFE_ALPHABET -> g
+    byte[] DECODABET -> h
+    byte[] WEBSAFE_DECODABET -> i
+    byte WHITE_SPACE_ENC -> j
+    byte EQUALS_SIGN_ENC -> k
+    boolean $assertionsDisabled -> c
+    byte[] encode3to4(byte[],int,int,byte[],int,byte[]) -> a
+    java.lang.String encode(byte[]) -> a
+    java.lang.String encodeWebSafe(byte[],boolean) -> a
+    java.lang.String encode(byte[],int,int,byte[],boolean) -> a
+    byte[] encode(byte[],int,int,byte[],int) -> a
+    int decode4to3(byte[],int,byte[],int,byte[]) -> a
+    byte[] decode(java.lang.String) -> a
+    byte[] decodeWebSafe(java.lang.String) -> b
+    byte[] decode(byte[]) -> b
+    byte[] decodeWebSafe(byte[]) -> c
+    byte[] decode(byte[],int,int) -> a
+    byte[] decodeWebSafe(byte[],int,int) -> b
+    byte[] decode(byte[],int,int,byte[]) -> a
+com.whateversoft.android.license.util.Base64DecoderException -> com.whateversoft.android.a.a.b:
+    long serialVersionUID -> a
+com.whateversoft.android.preferences.SeekBarPreference -> com.whateversoft.android.preferences.SeekBarPreference:
+    java.lang.String TAG -> a
+    java.lang.String ANDROIDNS -> b
+    java.lang.String ROB2DNS -> c
+    int DEFAULT_VALUE -> d
+    int mMaxValue -> e
+    int mMinValue -> f
+    int mInterval -> g
+    int mCurrentValue -> h
+    java.lang.String mUnitsLeft -> i
+    java.lang.String mUnitsRight -> j
+    android.widget.SeekBar mSeekBar -> k
+    android.widget.TextView mStatusText -> l
+    void initPreference(android.content.Context,android.util.AttributeSet) -> a
+    void setValuesFromXml(android.util.AttributeSet) -> a
+    java.lang.String getAttributeStringValue(android.util.AttributeSet,java.lang.String,java.lang.String,java.lang.String) -> a
+    android.view.View onCreateView(android.view.ViewGroup) -> onCreateView
+    void onBindView(android.view.View) -> onBindView
+    void updateView(android.view.View) -> a
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    java.lang.Object onGetDefaultValue(android.content.res.TypedArray,int) -> onGetDefaultValue
+    void onSetInitialValue(boolean,java.lang.Object) -> onSetInitialValue
+com.whateversoft.colorshafted.ColorShafted -> com.whateversoft.colorshafted.ColorShafted:
+    java.lang.String APP_TAG -> q
+    java.lang.String PREFERENCE_FILENAME -> r
+    com.whateversoft.android.framework.impl.android.CanvasGame context -> s
+    com.whateversoft.colorshafted.game.CSGlobalAssets globalAssets -> t
+    com.whateversoft.android.framework.impl.android.MusicJukeboxAndroid musicPlayer -> u
+    void onCreate(android.os.Bundle) -> onCreate
+    com.whateversoft.android.framework.Screen getStartScreen() -> g
+    com.whateversoft.android.framework.MusicJukebox getMusic() -> i
+    void onSettingChanged(java.lang.String) -> b
+    void onDestroy() -> onDestroy
+    void launchSettings() -> n
+    void loadMusicSettings() -> t
+    void onServerResponse(com.whateversoft.android.framework.impl.android.network.HttpRequestTask,int,java.lang.String) -> a
+    void onRequestTimeout(com.whateversoft.android.framework.impl.android.network.HttpRequestTask) -> a
+    void showServerErrorMsg() -> a_
+com.whateversoft.colorshafted.ColorShafted$GameMode -> com.whateversoft.colorshafted.a:
+    com.whateversoft.colorshafted.ColorShafted$GameMode ARCADE -> a
+    com.whateversoft.colorshafted.ColorShafted$GameMode PSYCHOUT -> b
+    com.whateversoft.colorshafted.ColorShafted$GameMode SURVIVAL -> c
+    com.whateversoft.colorshafted.ColorShafted$GameMode TUTORIAL -> d
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShafted$GameMode -> e
+    com.whateversoft.colorshafted.ColorShafted$GameMode[] ENUM$VALUES -> f
+    int getServerValue() -> a
+    com.whateversoft.colorshafted.ColorShafted$GameMode[] values() -> values
+    com.whateversoft.colorshafted.ColorShafted$GameMode valueOf(java.lang.String) -> valueOf
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShafted$GameMode() -> b
+com.whateversoft.colorshafted.ColorShaftedPrompter -> com.whateversoft.colorshafted.b:
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction resultScreenSelection -> o
+    java.lang.String promptForHighScore() -> c
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction showGameResults() -> d
+    void showTutorialDialog(java.lang.StringBuilder,java.lang.StringBuilder,java.lang.StringBuilder) -> b
+    void showMsgGoToStore(java.lang.StringBuilder) -> c
+    void showCredzDialog() -> e
+    void applyFonts(android.view.View,android.graphics.Typeface) -> a
+com.whateversoft.colorshafted.ColorShaftedPrompter$1 -> com.whateversoft.colorshafted.c:
+    com.whateversoft.colorshafted.ColorShaftedPrompter this$0 -> a
+    android.app.Dialog val$prompt -> b
+    void run() -> run
+com.whateversoft.colorshafted.ColorShaftedPrompter$2 -> com.whateversoft.colorshafted.d:
+    com.whateversoft.colorshafted.ColorShaftedPrompter this$0 -> a
+    android.app.Dialog val$prompt -> b
+    void run() -> run
+com.whateversoft.colorshafted.ColorShaftedPrompter$3 -> com.whateversoft.colorshafted.e:
+    com.whateversoft.colorshafted.ColorShaftedPrompter this$0 -> a
+    android.app.Dialog val$prompt -> b
+    void run() -> run
+com.whateversoft.colorshafted.ColorShaftedPrompter$4 -> com.whateversoft.colorshafted.f:
+    com.whateversoft.colorshafted.ColorShaftedPrompter this$0 -> a
+    android.app.Dialog val$prompt -> b
+    void run() -> run
+com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction -> com.whateversoft.colorshafted.g:
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction GO_TO_TITLE -> a
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction VIEW_HIGH_SCORES -> b
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction PLAY_AGAIN -> c
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction SUBMIT_ONLINE -> d
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction[] ENUM$VALUES -> e
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction[] values() -> values
+    com.whateversoft.colorshafted.ColorShaftedPrompter$GameResultAction valueOf(java.lang.String) -> valueOf
+com.whateversoft.colorshafted.CreditsDialog -> com.whateversoft.colorshafted.h:
+    android.graphics.Typeface dialogFont -> b
+com.whateversoft.colorshafted.CreditsDialog$1 -> com.whateversoft.colorshafted.i:
+    com.whateversoft.colorshafted.CreditsDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.DebugStarter -> com.whateversoft.colorshafted.DebugStarter:
+    void onCreate(android.os.Bundle) -> onCreate
+com.whateversoft.colorshafted.DebugStarter$1 -> com.whateversoft.colorshafted.j:
+    com.whateversoft.colorshafted.DebugStarter this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.GameResultsDialog -> com.whateversoft.colorshafted.k:
+    android.graphics.Typeface dialogFont -> a
+com.whateversoft.colorshafted.GameResultsDialog$1 -> com.whateversoft.colorshafted.l:
+    com.whateversoft.colorshafted.GameResultsDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.GameResultsDialog$2 -> com.whateversoft.colorshafted.m:
+    com.whateversoft.colorshafted.GameResultsDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.GameResultsDialog$3 -> com.whateversoft.colorshafted.n:
+    com.whateversoft.colorshafted.GameResultsDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.GameResultsDialog$4 -> com.whateversoft.colorshafted.o:
+    com.whateversoft.colorshafted.GameResultsDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.HighScoreDialog -> com.whateversoft.colorshafted.p:
+    android.graphics.Typeface dialogFont -> b
+    android.widget.Button okButton -> c
+    android.widget.CheckBox useDefaultName -> d
+    android.widget.EditText userInput -> e
+    com.whateversoft.android.framework.textui.PrompterAndroid prompter -> f
+    java.lang.Thread threadRunning -> g
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void enableDisableSubmitButton() -> a
+com.whateversoft.colorshafted.HighScoreDialog$1 -> com.whateversoft.colorshafted.q:
+    com.whateversoft.colorshafted.HighScoreDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+com.whateversoft.colorshafted.HighScoreDialog$NextBtnListener -> com.whateversoft.colorshafted.r:
+    com.whateversoft.colorshafted.HighScoreDialog this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.HighScoreDialog$SubmitOLBtnListener -> com.whateversoft.colorshafted.s:
+    com.whateversoft.colorshafted.HighScoreDialog this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.Settings -> com.whateversoft.colorshafted.Settings:
+    android.preference.Preference$OnPreferenceChangeListener changeListener -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String) -> onSharedPreferenceChanged
+    void onPause() -> onPause
+com.whateversoft.colorshafted.Settings$1 -> com.whateversoft.colorshafted.t:
+    com.whateversoft.colorshafted.Settings this$0 -> a
+    boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+com.whateversoft.colorshafted.TutorialDialog -> com.whateversoft.colorshafted.u:
+    android.graphics.Typeface dialogFont -> b
+com.whateversoft.colorshafted.TutorialDialog$1 -> com.whateversoft.colorshafted.v:
+    com.whateversoft.colorshafted.TutorialDialog this$0 -> a
+    com.whateversoft.android.framework.textui.PrompterAndroid val$prompter -> b
+    java.lang.Thread val$threadRunning -> c
+    void onClick(android.view.View) -> onClick
+com.whateversoft.colorshafted.constants.CSScreens -> com.whateversoft.colorshafted.a.a:
+    int SCR_LOADING -> a
+    int SCR_WHATEVERSOFT -> b
+    int SCR_TITLE -> c
+    int SCR_GAME -> d
+    int SCR_GAME_OVER -> e
+    int SCR_HIGH_SCORE -> f
+com.whateversoft.colorshafted.constants.CSSettings -> com.whateversoft.colorshafted.a.b:
+    int VAL_HTTP_TIME_30SEC -> a
+    int VAL_HTTP_TIME_60SEC -> b
+    int VAL_HTTP_TIME_120SEC -> c
+    java.lang.String KEY_DIFFICULTY -> d
+    java.lang.String KEY_LIVES_ARCADE -> e
+    java.lang.String KEY_BOMB_LONGTAP -> f
+    java.lang.String KEY_BOMB_SHAKE_GESTURE -> g
+    java.lang.String KEY_SHAKE_SENSITIVITY -> h
+    java.lang.String KEY_BOMB_SHAKE_ON_X -> i
+    java.lang.String KEY_BOMB_BUTTON -> j
+    java.lang.String KEY_ENABLE_SFX -> k
+    java.lang.String KEY_ENABLE_MUS -> l
+    java.lang.String KEY_MUSIC_PLAYMODE -> m
+    java.lang.String KEY_PLAY_TRACK_A -> n
+    java.lang.String KEY_PLAY_TRACK_B -> o
+    java.lang.String KEY_PLAY_TRACK_C -> p
+    java.lang.String KEY_PLAY_TRACK_D -> q
+    java.lang.String KEY_HIGHSCORE_PROMPT -> r
+    java.lang.String KEY_HIGHSCORE_NAME -> s
+    java.lang.String KEY_HIGHSCORE_RESET -> t
+    java.lang.String KEY_ENABLE_GFX_ANTIALIAS -> u
+    java.lang.String KEY_ENABLE_GFX_MOTIONBLUR -> v
+    java.lang.String KEY_ENABLE_GFX_COMBO_HUD -> w
+    java.lang.String KEY_SHOW_TUTORIAL_PROMPT -> x
+    java.lang.String KEY_DEVICE_ID -> y
+    java.lang.String KEY_HTTP_TIMEOUT -> z
+    java.lang.String KEY_LICENSE_UUID -> A
+    java.lang.String KEY_INTRO_ZOOMOUT -> B
+    java.lang.String KEY_INTRO_SCROLLTXT -> C
+    int DEFAULT_DIFFICULTY -> D
+    java.lang.String DEFAULT_LIVES_ARCADE -> E
+    boolean DEFAULT_BOMB_LONGTAP -> F
+    boolean DEFAULT_BOMB_SHAKE_GESTURE -> G
+    int DEFAULT_SHAKE_SENSITIVITY -> H
+    boolean DEFAULT_BOMB_BUTTON -> I
+    boolean DEFAULT_ENABLE_SFX -> J
+    boolean DEFAULT_ENABLE_MUS -> K
+    java.lang.String DEFAULT_MUSIC_PLAYMODE -> L
+    boolean DEFAULT_PLAY_TRACK_A -> M
+    boolean DEFAULT_PLAY_TRACK_B -> N
+    boolean DEFAULT_PLAY_TRACK_C -> O
+    boolean DEFAULT_PLAY_TRACK_D -> P
+    boolean DEFAULT_HIGHSCORE_PROMPT -> Q
+    boolean DEFAULT_ENABLE_GFX_MOTIONBLUR -> R
+    boolean DEFAULT_ENABLE_GFX_COMBO_HUD -> S
+    int DEFAULT_DEVICE_ID -> T
+    java.lang.String DEFAULT_HTTP_TIMEOUT -> U
+    boolean DEFAULT_INTRO_ZOOMOUT -> V
+    boolean DEFAULT_INTRO_SCROLLTXT -> W
+    boolean DEFAULT_ENABLE_GFX_ANTIALIAS -> X
+com.whateversoft.colorshafted.database.ScoreDataHelper -> com.whateversoft.colorshafted.b.a:
+    java.lang.String TABLE_NAME -> a
+    java.lang.String COLUMN_ID -> b
+    java.lang.String COLUMN_NAME -> c
+    java.lang.String COLUMN_SCORE -> d
+    java.lang.String COLUMN_PLAYTIME -> e
+    java.lang.String COLUMN_DATE -> f
+    java.lang.String COLUMN_STYLE -> g
+    java.lang.String COLUMN_LEVEL -> h
+    int KEY_ARCADE -> i
+    int KEY_SURVIVAL -> j
+    int KEY_PSYCHOUT -> k
+    java.lang.String DATABASE_NAME -> l
+    int DATABASE_VERSION -> m
+    java.lang.String DATABASE_CREATE -> n
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.whateversoft.colorshafted.database.ScoreDataSource -> com.whateversoft.colorshafted.b.b:
+    android.database.sqlite.SQLiteDatabase database -> a
+    com.whateversoft.colorshafted.database.ScoreDataHelper dbHelper -> b
+    java.lang.String[] allColumns -> c
+    java.lang.String ORDER_BY_SCORE -> d
+    java.lang.String ORDER_BY_SCORE_ASC -> e
+    void open() -> a
+    void close() -> b
+    com.whateversoft.colorshafted.database.ScoreEntry createHighScore(java.lang.String,int,int,int,long,com.whateversoft.colorshafted.ColorShafted$GameMode) -> a
+    void deleteComment(com.whateversoft.colorshafted.database.ScoreEntry) -> a
+    java.util.List getAllScores() -> c
+    int findScoreRank(java.lang.String,int,long,com.whateversoft.colorshafted.ColorShafted$GameMode) -> a
+    java.lang.StringBuilder findScoreRankOverall(java.lang.String,int,long,com.whateversoft.colorshafted.ColorShafted$GameMode) -> b
+    void deleteAllScores() -> d
+    com.whateversoft.colorshafted.database.ScoreEntry cursorToScore(android.database.Cursor) -> a
+com.whateversoft.colorshafted.database.ScoreEntry -> com.whateversoft.colorshafted.b.c:
+    long id -> a
+    java.lang.String name -> b
+    int score -> c
+    int level -> d
+    long playTime -> e
+    long date -> f
+    long gameStyle -> g
+    long getId() -> a
+    void setId(long) -> a
+    void setName(java.lang.String) -> a
+    java.lang.String getName() -> b
+    java.lang.String getFormattedScore() -> c
+    int getScore() -> d
+    void setScore(int) -> a
+    long getPlayTime() -> e
+    int getLevel() -> f
+    java.lang.String getFormattedPlayTime() -> g
+    void setPlayTime(long) -> b
+    int getGameStyle() -> h
+    void setGameStyle(int) -> b
+    long getDate() -> i
+    java.lang.String getFormattedDate() -> j
+    void setDate(long) -> c
+    void setLevel(int) -> c
+    java.lang.String toString() -> toString
+com.whateversoft.colorshafted.game.BlackHole -> com.whateversoft.colorshafted.c.a:
+    int SPEED -> a
+    int ROTATE_PER_SEC -> b
+    com.whateversoft.colorshafted.screens.GameScr gameScreen -> c
+    float actualRotation -> d
+    void update(float) -> a
+    void setOrientation(int) -> a
+    void initializeObject(int) -> b
+    android.graphics.Rect getCollidable() -> a
+    boolean collidesWith(com.whateversoft.colorshafted.game.Collidable) -> a
+com.whateversoft.colorshafted.game.BombExplosion -> com.whateversoft.colorshafted.c.b:
+    void animate(long) -> a
+com.whateversoft.colorshafted.game.CSGlobalAssets -> com.whateversoft.colorshafted.c.c:
+    int ASSET_COUNT -> c
+    int SND_READY -> d
+    void obtainAssets() -> a
+com.whateversoft.colorshafted.game.Collidable -> com.whateversoft.colorshafted.c.d:
+    android.graphics.Rect getCollidable() -> a
+    boolean collidesWith(com.whateversoft.colorshafted.game.Collidable) -> a
+com.whateversoft.colorshafted.game.ColorBlock -> com.whateversoft.colorshafted.c.e:
+    int RED -> a
+    int GREEN -> b
+    int YELLOW -> c
+    int BLUE -> d
+    int color -> e
+    int flashTimer -> f
+    int saturationLevel -> A
+    com.whateversoft.colorshafted.screens.GameScr gameScreen -> B
+    void setLogicalColor(int) -> a
+    void setGraphicColor(int) -> b
+    void setGraphicAsset(int) -> c
+    void setColorAndGraphic(int) -> d
+    void update(float) -> a
+    android.graphics.Rect getCollidable() -> a
+    boolean collidesWith(com.whateversoft.colorshafted.game.Collidable) -> a
+    void setDesatValue(int) -> e
+com.whateversoft.colorshafted.game.ColorBlockE -> com.whateversoft.colorshafted.c.f:
+    boolean hasBeenEvaded -> C
+    float speed -> D
+    int distFromCenter -> E
+    long lastTimeCreatedShadow -> F
+    void update(float) -> a
+    void instantiateAsEnemy(int,int,int) -> a
+    void instantiateAsEnemy(int,int) -> a
+    void calcDistFromCenter() -> d
+    void desaturate() -> e
+com.whateversoft.colorshafted.game.ColorBlockECT -> com.whateversoft.colorshafted.c.g:
+    float xformAmt -> G
+    boolean rotated360 -> H
+    int targetColor -> I
+    int preColor -> J
+    int xFormAnimAsset -> K
+    int xFormFrame -> L
+    java.util.Map xformColorMap -> M
+    void instantiateAsEnemy(int,int) -> a
+    void resetCTBlock(int) -> f
+    void update(float) -> a
+    void setLogicalColor(int) -> a
+    void setUpXformMap() -> f
+    void adjustXformColor() -> g
+com.whateversoft.colorshafted.game.ColorBlockEDS -> com.whateversoft.colorshafted.c.h:
+    float xformAmt -> G
+    boolean rotated360 -> H
+    void update(float) -> a
+    void adjustSaturation() -> f
+    void setUpDSBlock(int) -> f
+    void instantiateAsEnemy(int,int) -> a
+com.whateversoft.colorshafted.game.ColorBlockP -> com.whateversoft.colorshafted.c.i:
+    float xformAmt -> C
+    boolean rotated360 -> D
+com.whateversoft.colorshafted.game.ColorExplosion -> com.whateversoft.colorshafted.c.j:
+    int color -> A
+    void setExplosionColor(int) -> a
+    void animate(long) -> a
+com.whateversoft.colorshafted.game.ComboText -> com.whateversoft.colorshafted.c.k:
+    float sizeFloat -> h
+    int colorType -> i
+    int HUD_DOWN -> j
+    int HUD_UP -> k
+    void update(float) -> a
+    void initialValues(int) -> a
+com.whateversoft.colorshafted.game.ControlBlock -> com.whateversoft.colorshafted.c.l:
+    int INVINCIBILITY_TIMER -> a
+    com.whateversoft.android.framework.Input input -> b
+    com.whateversoft.colorshafted.screens.GameScr gameScreen -> c
+    com.whateversoft.android.framework.ScreenAssets assets -> d
+    boolean initialized -> e
+    boolean TURN_LEFT -> f
+    boolean TURN_RIGHT -> g
+    int MOVE_UP -> h
+    int MOVE_DOWN -> i
+    int MOVE_LEFT -> j
+    int MOVE_RIGHT -> k
+    int MOVE_UP_RIGHT -> A
+    int MOVE_RIGHT_DOWN -> B
+    int MOVE_DOWN_LEFT -> C
+    int MOVE_LEFT_UP -> D
+    float saturationFlux -> V
+    boolean saturationDirection -> E
+    int gridPosX -> F
+    int gridPosY -> G
+    int truePosX -> H
+    int truePosY -> I
+    double rotationCBArms -> J
+    int rotationPos -> K
+    boolean rotateDir -> L
+    int invincibleTimer -> M
+    boolean shakeOnX -> N
+    int shakeTimer -> O
+    int CB_DISTANCE -> P
+    boolean hasInitialized -> Q
+    com.whateversoft.colorshafted.game.ColorBlockP[] colorBlocks -> R
+    com.whateversoft.android.framework.ImageEntity controlBlockCenter -> S
+    com.whateversoft.android.framework.ImageEntity controlBlockArms -> T
+    java.util.Random randomizer -> U
+    void position() -> d
+    void shiftToDest() -> e
+    void rotate(boolean) -> b
+    void update(float) -> a
+    void move(int) -> a
+    android.graphics.Rect getBounds() -> c
+    void shake(boolean) -> c
+    android.graphics.Rect getCollidable() -> a
+    boolean collidesWith(com.whateversoft.colorshafted.game.Collidable) -> a
+    void fluctuateSaturation(float) -> b
+com.whateversoft.colorshafted.game.EnvObjSpawner -> com.whateversoft.colorshafted.c.m:
+    boolean debugging -> a
+    com.whateversoft.colorshafted.screens.GameScr gameScreen -> b
+    java.util.Random rand -> c
+    int MAX_DIFFICULTY -> d
+    int BH_WARNING_TIME -> e
+    int BH_OR_LEFT -> f
+    int BH_OR_RIGHT -> g
+    int BH_OR_TOP -> h
+    int BH_OR_BOTTOM -> i
+    int BH_OR_TOPLEFT -> j
+    int BH_OR_TOPRIGHT -> k
+    int BH_OR_BOTTOMLEFT -> l
+    int BH_OR_BOTTOMRIGHT -> m
+    int R -> n
+    int G -> o
+    int B -> p
+    int Y -> q
+    int ANY -> r
+    int NO_SHIFT -> s
+    int ONE_SHIFT_UNI -> t
+    int ONE_SHIFT_BI -> u
+    int TWO_SHIFT -> v
+    int RANDOM_SHIFT -> w
+    int DIR_LEFT -> x
+    int DIR_UP -> y
+    int DIR_RIGHT -> z
+    int DIR_DOWN -> A
+    int BHSPAWN_UNIDIR -> B
+    int BHSPAWN_DUALDIR -> C
+    int shaftSpawnedAt -> D
+    int[][] colorSpawnMap -> E
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod rotateShiftMode -> F
+    com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod positionShiftMode -> G
+    int positionRepeat -> H
+    int repeatCountdown -> I
+    int incomingBHDir -> J
+    int bhCreateInterval -> K
+    int bhCountDown -> L
+    boolean giveDSBlock -> M
+    boolean giveCTBlock -> N
+    int percentDSLikely -> O
+    int percentCTLikely -> P
+    int colorConfig -> Q
+    int spawnTargetPos -> R
+    int directionShift -> S
+    int blocksCreated -> T
+    int difficulty -> U
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShafted$GameMode -> V
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$game$EnvObjSpawner$RotateShiftMethod -> W
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$game$EnvObjSpawner$PositionShiftMethod -> X
+    void defineColorMap() -> a
+    void setUpDifficulty(int) -> a
+    com.whateversoft.colorshafted.game.ColorBlockE spawnColorBlock() -> b
+    com.whateversoft.colorshafted.game.ColorBlockE spawnColorBlock(int,int,int) -> a
+    int nextBlackHoleDir() -> c
+    void spawnNextObject() -> d
+    boolean gridOrientationValid(int,int) -> a
+    void setNextConfig() -> e
+    boolean determineNextBombItem() -> f
+    boolean determineNextLifeItem() -> g
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShafted$GameMode() -> h
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$game$EnvObjSpawner$RotateShiftMethod() -> i
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$game$EnvObjSpawner$PositionShiftMethod() -> j
+com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod -> com.whateversoft.colorshafted.c.n:
+    com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod NONE -> a
+    com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod ONE_SHIFT_RANDOM -> b
+    com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod TWO_SHIFT_RANDOM -> c
+    com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod RANDOM -> d
+    com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod[] ENUM$VALUES -> e
+    com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod[] values() -> values
+    com.whateversoft.colorshafted.game.EnvObjSpawner$PositionShiftMethod valueOf(java.lang.String) -> valueOf
+com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod -> com.whateversoft.colorshafted.c.o:
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod NONE -> a
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod ONE_SHIFT_UNI -> b
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod ONE_SHIFT_BI -> c
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod TWO_SHIFT -> d
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod RANDOM -> e
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod[] ENUM$VALUES -> f
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod[] values() -> values
+    com.whateversoft.colorshafted.game.EnvObjSpawner$RotateShiftMethod valueOf(java.lang.String) -> valueOf
+com.whateversoft.colorshafted.game.ErrorExplosion -> com.whateversoft.colorshafted.c.p:
+    void animate(long) -> a
+com.whateversoft.colorshafted.game.GameStats -> com.whateversoft.colorshafted.c.q:
+    int score -> a
+    int lives -> b
+    int playTime -> c
+    int shield -> d
+    int difficulty -> e
+    int startingDifficulty -> f
+    int bombs -> g
+    int enemiesHit -> h
+    int enemiesEvaded -> i
+    int localScoreRanking -> j
+    int successfulCollisions -> k
+    int bombsUsed -> l
+    int maxCombo -> m
+    int evasionPercentage -> n
+    java.lang.StringBuilder rankingSummary -> o
+    com.whateversoft.colorshafted.ColorShafted$GameMode gameStyle -> p
+    void resetStatsClassic(int,com.whateversoft.colorshafted.ColorShafted) -> a
+    void resetStatsSurvival(int,int,com.whateversoft.colorshafted.ColorShafted) -> a
+    void newGameStats(com.whateversoft.colorshafted.ColorShafted) -> a
+    java.lang.String getFormattedPlayTime() -> a
+com.whateversoft.colorshafted.game.LevelItem -> com.whateversoft.colorshafted.c.r:
+    int RED -> a
+    int GREEN -> b
+    int YELLOW -> c
+    int BLUE -> d
+    int TYPE_XTRA_BOMB -> e
+    int TYPE_XTRA_LIFE -> f
+    com.whateversoft.colorshafted.screens.GameScr gameScreen -> A
+    int type -> B
+    int color -> C
+    int animFrameSequencer -> D
+    int ANIM_FRAME_COUNT -> E
+    boolean obtained -> F
+    float speed -> G
+    void instantiateItem(int,int,int,int) -> a
+    void update(float) -> a
+    void instantiateItem() -> d
+    void updateImage() -> e
+    android.graphics.Rect getCollidable() -> a
+    boolean collidesWith(com.whateversoft.colorshafted.game.Collidable) -> a
+com.whateversoft.colorshafted.game.PlayerControl -> com.whateversoft.colorshafted.c.s:
+    int SWIPE_UP -> a
+    int SWIPE_UP_RIGHT -> b
+    int SWIPE_RIGHT -> c
+    int SWIPE_RIGHT_DOWN -> d
+    int SWIPE_DOWN -> e
+    int SWIPE_DOWN_LEFT -> f
+    int SWIPE_LEFT -> g
+    int SWIPE_LEFT_UP -> h
+    int ROTATE_LEFT -> i
+    int ROTATE_RIGHT -> j
+    int BOMB_SCREEN -> k
+    int FINGER1 -> l
+    int FINGER2 -> m
+    int LR_SHAKE -> n
+    int RL_SHAKE -> o
+    float shakeDelta -> p
+    double[] accelQueue -> q
+    int accelShakeCount -> r
+    int accelShakeDir -> s
+    int accelShakeTimer -> t
+    boolean playerInputEnabled -> z
+    com.whateversoft.android.framework.impl.android.CanvasGame game -> u
+    com.whateversoft.colorshafted.screens.GameScr gameScreen -> v
+    com.whateversoft.android.framework.Input input -> w
+    int POINTER_1_OFFSET -> x
+    android.graphics.Point[] touchPoints -> y
+    void detectPlayerInputEvents() -> a
+    void detectScreenShake() -> b
+    void playerInputEnabled(boolean) -> a
+    boolean isPlayerInputEnabled() -> c
+com.whateversoft.colorshafted.game.ShadowColor -> com.whateversoft.colorshafted.c.t:
+    boolean isEnemyShadow -> a
+    void update(float) -> a
+    void initializeObject(int,float,float,int,int,boolean,boolean) -> a
+    void initializeObject(int,float,float) -> a
+com.whateversoft.colorshafted.game.TutorialSequencer -> com.whateversoft.colorshafted.c.u:
+    int S_WELCOME -> a
+    int S_HUD_COMPONENTS -> b
+    int S_MATCHCOLOR_DEMO -> c
+    int S_MOVE_DEMO -> d
+    int S_MOVE_PLAY_PROMPT -> e
+    int S_MOVE_PLAY_REPROMPT -> f
+    int S_MOVE_PLAY -> g
+    int S_ROTATE_DEMO -> h
+    int S_ROTATE_PLAY_PROMPT -> i
+    int S_ROTATE_PLAY_REPROMPT -> j
+    int S_BOMB_DEMO -> k
+    int S_BOMB_PLAY_PROMPT -> l
+    int S_BOMB_PLAY_REPROMPT -> m
+    int S_FREEPLAY -> n
+    com.whateversoft.colorshafted.screens.GameScr screen -> o
+    int currentStep -> p
+    boolean hasStarted -> q
+    int sequenceTimer -> r
+    int moveDirCount -> s
+    boolean trackingPlayerInput -> t
+    boolean[] movedInDirections -> u
+    int movedInDirectionsCount -> v
+    int rotatedCount -> w
+    int bombedCount -> x
+    void processStep() -> a
+    void update() -> b
+    void showPrompt(java.lang.StringBuilder,java.lang.StringBuilder,java.lang.StringBuilder) -> a
+    void trackPlayerInput(int) -> a
+com.whateversoft.colorshafted.game.factories.BlackHoleFactory -> com.whateversoft.colorshafted.c.a.a:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    int layer -> c
+    com.whateversoft.colorshafted.game.BlackHole newObject() -> c
+    com.whateversoft.colorshafted.game.BlackHole getFactoryObject(int) -> a
+    void throwInPool(com.whateversoft.colorshafted.game.BlackHole) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.game.factories.ColorExplosionFactory -> com.whateversoft.colorshafted.c.a.b:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    com.whateversoft.colorshafted.game.ColorExplosion newObject() -> c
+    void throwInPool(com.whateversoft.colorshafted.game.ColorExplosion) -> a
+    com.whateversoft.colorshafted.game.ColorExplosion getFactoryObject(int,int,int) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.game.factories.ComboTextFactory -> com.whateversoft.colorshafted.c.a.c:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    com.whateversoft.colorshafted.game.ComboText newObject() -> c
+    void throwInPool(com.whateversoft.colorshafted.game.ComboText) -> a
+    com.whateversoft.colorshafted.game.ComboText getObject(int,int,java.lang.StringBuffer,int) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.game.factories.EnemyBlockFactory -> com.whateversoft.colorshafted.c.a.d:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    int layer -> c
+    com.whateversoft.colorshafted.game.ColorBlockE newObject() -> c
+    com.whateversoft.colorshafted.game.ColorBlockE getFactoryObject(int,int,int) -> a
+    com.whateversoft.colorshafted.game.ColorBlockE getFactoryObject(int,int) -> a
+    void throwInPool(com.whateversoft.colorshafted.game.ColorBlockE) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.game.factories.EnemyCTBlockFactory -> com.whateversoft.colorshafted.c.a.e:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    int layer -> c
+    com.whateversoft.colorshafted.game.ColorBlockECT newObject() -> c
+    com.whateversoft.colorshafted.game.ColorBlockE getFactoryObject(int,int,int) -> a
+    com.whateversoft.colorshafted.game.ColorBlockE getFactoryObject(int,int) -> a
+    void throwInPool(com.whateversoft.colorshafted.game.ColorBlockECT) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.game.factories.EnemyDSBlockFactory -> com.whateversoft.colorshafted.c.a.f:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    int layer -> c
+    com.whateversoft.colorshafted.game.ColorBlockEDS newObject() -> c
+    com.whateversoft.colorshafted.game.ColorBlockE getFactoryObject(int,int,int) -> a
+    com.whateversoft.colorshafted.game.ColorBlockE getFactoryObject(int,int) -> a
+    void throwInPool(com.whateversoft.colorshafted.game.ColorBlockEDS) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.game.factories.ErrorExplosionFactory -> com.whateversoft.colorshafted.c.a.g:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    com.whateversoft.colorshafted.game.ErrorExplosion newObject() -> c
+    void throwInPool(com.whateversoft.colorshafted.game.ErrorExplosion) -> a
+    com.whateversoft.colorshafted.game.ErrorExplosion getFactoryObject(int,int) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.game.factories.LevelItemFactory -> com.whateversoft.colorshafted.c.a.h:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    int layer -> c
+    com.whateversoft.colorshafted.game.LevelItem newObject() -> c
+    com.whateversoft.colorshafted.game.LevelItem getFactoryObject(int,int,int,int) -> a
+    void throwInPool(com.whateversoft.colorshafted.game.LevelItem) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.game.factories.ShadowColorFactory -> com.whateversoft.colorshafted.c.a.i:
+    com.whateversoft.colorshafted.screens.GameScr screen -> b
+    int layer -> c
+    com.whateversoft.colorshafted.game.ShadowColor newObject() -> c
+    com.whateversoft.colorshafted.game.ShadowColor getFactoryObject(int,float,float,int,int,boolean,boolean) -> a
+    com.whateversoft.colorshafted.game.ShadowColor getFactoryObject(int,float,float) -> a
+    void throwInPool(com.whateversoft.colorshafted.game.ShadowColor) -> a
+    java.lang.Object newObject() -> b
+    void throwInPool(java.lang.Object) -> a
+com.whateversoft.colorshafted.network.HTMLParser -> com.whateversoft.colorshafted.d.a:
+    java.lang.String clearHTMLTags(java.lang.String) -> a
+com.whateversoft.colorshafted.network.HighScoresRequest -> com.whateversoft.colorshafted.d.b:
+    com.whateversoft.android.framework.impl.android.network.HttpClientApp callerApp -> k
+    int gameStyle -> l
+    int index -> m
+    int resultCount -> n
+    java.lang.String doInBackground(java.lang.String[]) -> a
+    void onPostExecute(java.lang.String) -> a
+    int getResponseCode() -> b
+    int getGameStyle() -> h
+com.whateversoft.colorshafted.network.RetrievedNetworkData -> com.whateversoft.colorshafted.d.c:
+    com.whateversoft.colorshafted.database.ScoreEntry[] highScoreData -> a
+    void setHighScoreData(java.lang.StringBuffer) -> a
+com.whateversoft.colorshafted.network.ServerCodes -> com.whateversoft.colorshafted.d.d:
+    int INSERT_SCORE -> a
+    int SUBMIT_HIGHSCORE -> b
+    int GET_HIGHSCORES -> c
+com.whateversoft.colorshafted.network.SubmitScoreRequest -> com.whateversoft.colorshafted.d.e:
+    int RINDEX_HIGHEST_RANK -> k
+    int RINDEX_WAS_HIGHEST -> l
+    int RINDEX_DEVICE_ID -> m
+    com.whateversoft.android.framework.impl.android.network.HttpClientApp callerApp -> n
+    int deviceId -> o
+    int score -> p
+    int gameStyle -> q
+    long datePlayed -> r
+    long playTime -> s
+    int level -> t
+    java.lang.String name -> u
+    java.lang.String doInBackground(java.lang.String[]) -> a
+    void onPostExecute(java.lang.String) -> a
+    int getResponseCode() -> b
+com.whateversoft.colorshafted.practice.AccelerometerTest -> com.whateversoft.colorshafted.practice.AccelerometerTest:
+    android.widget.TextView textView -> a
+    java.lang.StringBuilder builder -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+com.whateversoft.colorshafted.practice.AndroidBasicsStarter -> com.whateversoft.colorshafted.practice.AndroidBasicsStarter:
+    java.lang.String[] tests -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+com.whateversoft.colorshafted.practice.AssetsTest -> com.whateversoft.colorshafted.practice.AssetsTest:
+    void onCreate(android.os.Bundle) -> onCreate
+    java.lang.String loadTextFile(java.io.InputStream) -> a
+com.whateversoft.colorshafted.practice.BitmapTest -> com.whateversoft.colorshafted.practice.BitmapTest:
+    void onCreate(android.os.Bundle) -> onCreate
+com.whateversoft.colorshafted.practice.BitmapTest$RenderView -> com.whateversoft.colorshafted.practice.a:
+    android.graphics.Bitmap bob565 -> a
+    android.graphics.Bitmap bob4444 -> b
+    android.graphics.Rect dst -> c
+    com.whateversoft.colorshafted.practice.BitmapTest this$0 -> d
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.whateversoft.colorshafted.practice.ExternalStorageTest -> com.whateversoft.colorshafted.practice.ExternalStorageTest:
+    void onCreate(android.os.Bundle) -> onCreate
+    void writeTextFile(java.io.File,java.lang.String) -> a
+    java.lang.String readTextFile(java.io.File) -> a
+com.whateversoft.colorshafted.practice.FontTest -> com.whateversoft.colorshafted.practice.FontTest:
+    void onCreate(android.os.Bundle) -> onCreate
+com.whateversoft.colorshafted.practice.FontTest$RenderView -> com.whateversoft.colorshafted.practice.b:
+    android.graphics.Paint paint -> a
+    android.graphics.Typeface font -> b
+    android.graphics.Typeface font2 -> c
+    android.graphics.Rect bounds -> d
+    com.whateversoft.colorshafted.practice.FontTest this$0 -> e
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.whateversoft.colorshafted.practice.FullScreenTest -> com.whateversoft.colorshafted.practice.FullScreenTest:
+    void onCreate(android.os.Bundle) -> onCreate
+com.whateversoft.colorshafted.practice.KeyTest -> com.whateversoft.colorshafted.practice.KeyTest:
+    java.lang.StringBuilder builder -> a
+    android.widget.TextView textView -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+com.whateversoft.colorshafted.practice.LifeCycleTest -> com.whateversoft.colorshafted.practice.LifeCycleTest:
+    java.lang.StringBuilder builder -> a
+    android.widget.TextView textView -> b
+    void log(java.lang.String) -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+com.whateversoft.colorshafted.practice.MediaPlayerTest -> com.whateversoft.colorshafted.practice.MediaPlayerTest:
+    android.media.MediaPlayer mediaPlayer -> a
+    android.os.PowerManager powerManager -> b
+    android.os.PowerManager$WakeLock wakeLock -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+com.whateversoft.colorshafted.practice.MultiTouchTest -> com.whateversoft.colorshafted.practice.MultiTouchTest:
+    java.lang.StringBuilder builder -> a
+    android.widget.TextView textView -> b
+    float[] x -> c
+    float[] y -> d
+    boolean[] touched -> e
+    void updateTextView() -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.whateversoft.colorshafted.practice.RenderView -> com.whateversoft.colorshafted.practice.c:
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.whateversoft.colorshafted.practice.RenderViewTest -> com.whateversoft.colorshafted.practice.RenderViewTest:
+    void onCreate(android.os.Bundle) -> onCreate
+com.whateversoft.colorshafted.practice.RenderViewTest$RenderView -> com.whateversoft.colorshafted.practice.d:
+    java.util.Random rand -> a
+    com.whateversoft.colorshafted.practice.RenderViewTest this$0 -> b
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.whateversoft.colorshafted.practice.ShapeTest -> com.whateversoft.colorshafted.practice.ShapeTest:
+    android.graphics.Paint paint -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.whateversoft.colorshafted.practice.ShapeTest$RenderView -> com.whateversoft.colorshafted.practice.e:
+    com.whateversoft.colorshafted.practice.ShapeTest this$0 -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.whateversoft.colorshafted.practice.SingleTouchTest -> com.whateversoft.colorshafted.practice.SingleTouchTest:
+    java.lang.StringBuilder builder -> a
+    android.widget.TextView textView -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.whateversoft.colorshafted.practice.SoundPoolTest -> com.whateversoft.colorshafted.practice.SoundPoolTest:
+    android.media.SoundPool soundPool -> a
+    int explosionId -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.whateversoft.colorshafted.practice.SurfaceViewTest -> com.whateversoft.colorshafted.practice.SurfaceViewTest:
+    com.whateversoft.colorshafted.practice.SurfaceViewTest$FastRenderView renderView -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+com.whateversoft.colorshafted.practice.SurfaceViewTest$FastRenderView -> com.whateversoft.colorshafted.practice.f:
+    java.lang.Thread renderThread -> a
+    android.view.SurfaceHolder holder -> b
+    boolean running -> c
+    com.whateversoft.colorshafted.practice.SurfaceViewTest this$0 -> d
+    void resume() -> a
+    void run() -> run
+    void pause() -> b
+com.whateversoft.colorshafted.screens.CSLoaderScreen -> com.whateversoft.colorshafted.e.a:
+    void timedLogic() -> a
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    int getScreenCode() -> j
+com.whateversoft.colorshafted.screens.GameOverRecycleScr -> com.whateversoft.colorshafted.e.b:
+    void timedLogic() -> a
+    int getScreenCode() -> j
+com.whateversoft.colorshafted.screens.GameOverScr -> com.whateversoft.colorshafted.e.c:
+    com.whateversoft.android.framework.ImageEntity gameOverTxtImg -> v
+    com.whateversoft.android.framework.ImageEntity gameOverBgImg -> w
+    com.whateversoft.android.framework.ImageEntity gameOverTapImg -> x
+    android.graphics.Rect fadeScreenRect -> y
+    int bgY -> z
+    float backgroundAngle -> A
+    boolean gOSndPlayed -> B
+    java.lang.String userName -> C
+    int FADE_IN_TIME -> D
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShaftedPrompter$GameResultAction -> E
+    void timedLogic() -> a
+    void fadeInLogic(float) -> b
+    void screenTapped() -> h
+    void backPressed() -> g
+    void promptForHighScore() -> k
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    void onServerResponse(com.whateversoft.android.framework.impl.android.network.HttpRequestTask,int,java.lang.String) -> a
+    void onRequestTimeout(com.whateversoft.android.framework.impl.android.network.HttpRequestTask) -> a
+    void responseSequence() -> l
+    void showServerErrorMsg() -> a_
+    int getScreenCode() -> j
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShaftedPrompter$GameResultAction() -> m
+com.whateversoft.colorshafted.screens.GameOverScr$1 -> com.whateversoft.colorshafted.e.d:
+    com.whateversoft.colorshafted.screens.GameOverScr this$0 -> a
+    int val$deviceId -> b
+    com.whateversoft.android.framework.impl.android.network.HttpClientApp val$thisHttpClient -> c
+    void run() -> run
+com.whateversoft.colorshafted.screens.GameOverScrAssets -> com.whateversoft.colorshafted.e.e:
+    int ASSET_COUNT -> c
+    int IMG_BG -> d
+    int IMG_GAMEOVER_TXT -> e
+    int IMG_GAMEOVER_TAPTXT -> f
+    int SND_GAMEOVER -> g
+    void obtainAssets() -> a
+com.whateversoft.colorshafted.screens.GameScr -> com.whateversoft.colorshafted.e.f:
+    int LAYER_BACKGROUND -> v
+    int LAYER_FOREGROUND -> w
+    int LAYER_ENTITIES -> x
+    int LAYER_ENTITIES_FRONT -> y
+    int LAYER_ENTITIES_FX -> z
+    int LAYER_HUD -> A
+    int LAYER_DEBUG -> B
+    int GAME_CANVAS_WIDTH -> C
+    int GAME_CANVAS_HEIGHT -> D
+    int GRID_SQ_SIZE -> E
+    int GRID_COLUMNS -> F
+    int GRID_ROWS -> G
+    int GRID_LEFT -> H
+    int GRID_TOP -> I
+    int GRID_RIGHT -> J
+    int GRID_BOTTOM -> K
+    int GAME_CANVAS_LEFT -> L
+    int GAME_CANVAS_BOTTOM -> M
+    int GAME_CANVAS_TOP -> N
+    int GAME_CANVAS_RIGHT -> O
+    int SHAFT_UP_LEFT -> P
+    int SHAFT_UP_CENTER -> Q
+    int SHAFT_UP_RIGHT -> R
+    int SHAFT_DOWN_LEFT -> S
+    int SHAFT_DOWN_CENTER -> T
+    int SHAFT_DOWN_RIGHT -> U
+    int SHAFT_RIGHT_TOP -> V
+    int SHAFT_RIGHT_CENTER -> W
+    int SHAFT_RIGHT_BOTTOM -> X
+    int SHAFT_LEFT_TOP -> Y
+    int SHAFT_LEFT_CENTER -> Z
+    int SHAFT_LEFT_BOTTOM -> aa
+    int GRID_TOP_LEFT -> ab
+    int GRID_TOP_CENTER -> ac
+    int GRID_TOP_RIGHT -> ad
+    int GRID_MID_LEFT -> ae
+    int GRID_MID_CENTER -> af
+    int GRID_MID_RIGHT -> ag
+    int GRID_BOT_LEFT -> ah
+    int GRID_BOT_CENTER -> ai
+    int GRID_BOT_RIGHT -> aj
+    int[] introTxtColorTarget -> ak
+    com.whateversoft.android.framework.FPSCounter fpsLogger -> al
+    com.whateversoft.colorshafted.game.factories.EnemyBlockFactory eBlockFactory -> am
+    com.whateversoft.colorshafted.game.factories.EnemyDSBlockFactory eDSBlockFactory -> an
+    com.whateversoft.colorshafted.game.factories.EnemyCTBlockFactory eCTBlockFactory -> ao
+    com.whateversoft.colorshafted.game.factories.LevelItemFactory lItemFactory -> ap
+    com.whateversoft.colorshafted.game.factories.BlackHoleFactory bHFactory -> aq
+    com.whateversoft.colorshafted.game.factories.ColorExplosionFactory cExpFactory -> ar
+    com.whateversoft.colorshafted.game.factories.ErrorExplosionFactory eExpFactory -> as
+    com.whateversoft.colorshafted.game.factories.ComboTextFactory cTxtFactory -> at
+    com.whateversoft.colorshafted.game.factories.ShadowColorFactory sColorFactory -> au
+    com.whateversoft.colorshafted.game.ControlBlock controlBlock -> av
+    java.util.ArrayList eBlocks -> aw
+    java.util.ArrayList blackHoles -> ax
+    java.util.ArrayList lItems -> ay
+    com.whateversoft.android.framework.ImageEntity shaftBg -> az
+    com.whateversoft.android.framework.ImageEntity shaftFGL -> aA
+    com.whateversoft.android.framework.ImageEntity shaftFGR -> aB
+    com.whateversoft.android.framework.ImageEntity bombButton -> aC
+    com.whateversoft.android.framework.ImageEntity hudPanelImg -> aD
+    com.whateversoft.android.framework.TextEntity currentSongTxt -> aE
+    android.graphics.Rect fadeOutRect -> aF
+    com.whateversoft.colorshafted.game.PlayerControl playerController -> aG
+    com.whateversoft.colorshafted.game.EnvObjSpawner envObjCreator -> aH
+    com.whateversoft.colorshafted.game.TutorialSequencer helpSequencer -> aI
+    int lastBlockCreatedAt -> aJ
+    int hitComboCounter -> aK
+    int highestHitCombo -> aL
+    int blockCreationRate -> aM
+    int postBombTimer -> aN
+    boolean gameInProgress -> aO
+    com.whateversoft.android.framework.TextEntity livesHUDTxt -> aP
+    com.whateversoft.android.framework.TextEntity scoreHUDTxt -> aQ
+    com.whateversoft.android.framework.TextEntity diffHUDTxt -> aR
+    com.whateversoft.android.framework.TextEntity readyTxt -> aS
+    com.whateversoft.android.framework.TextEntity bombHUDTxt -> aT
+    int fadeInSequencer -> aU
+    boolean readySndPlayed -> aV
+    boolean fadeInSlideSndPlayed -> aW
+    boolean introFinished -> aX
+    android.graphics.Rect screenFadeRect -> aY
+    com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle fadeOutStyle -> aZ
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShafted$GameMode -> ba
+    void timedLogic() -> a
+    void detectEnemyCollisions() -> k
+    void detectItemCollisions() -> l
+    void detectObjectCollisions() -> m
+    void detectBlackHoleCollisions() -> n
+    void spawnNextObject() -> o
+    void clearEnemyBlocks() -> p
+    void playerControlEvent(int) -> a
+    int gameCanvasX(int) -> b
+    int gameCanvasY(int) -> c
+    void bombScreen() -> q
+    void updateHUD() -> r
+    void successfulBlockHit(int,int,int) -> a
+    void unsuccessfulBlockHit(com.whateversoft.colorshafted.game.ColorBlockE) -> a
+    void playerWasHit() -> s
+    void backPressed() -> g
+    void setDifficulty(int) -> d
+    void goToScreen(com.whateversoft.android.framework.Screen) -> a
+    void fadeInLogic(float) -> b
+    int blockScoreAlgo() -> t
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    void fadeOutLogic(float) -> c
+    int getScreenCode() -> j
+    void debugCode() -> u
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShafted$GameMode() -> v
+com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle -> com.whateversoft.colorshafted.e.g:
+    com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle TO_GAME_OVER -> a
+    com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle TO_BLACK -> b
+    com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle[] ENUM$VALUES -> c
+    com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle[] values() -> values
+    com.whateversoft.colorshafted.screens.GameScr$FadeOutStyle valueOf(java.lang.String) -> valueOf
+com.whateversoft.colorshafted.screens.GameScrAssets -> com.whateversoft.colorshafted.e.h:
+    int ASSET_COUNT -> c
+    int IMG_BLOCK_R -> d
+    int IMG_BLOCK_B -> e
+    int IMG_BLOCK_G -> f
+    int IMG_BLOCK_Y -> g
+    int IMG_BLOCK_FLASH -> h
+    int IMG_CB_CENTER -> i
+    int IMG_CB_ARMS -> j
+    int IMG_SHAFT_BG_L -> k
+    int IMG_SHAFT_BG_R -> l
+    int IMG_SHAFT_BG_C -> m
+    int IMG_BOMB_BUTTON -> n
+    int IMG_HUD_PANEL -> o
+    int IMG_BLACK_HOLE -> p
+    int ANIM_R_EXPL -> q
+    int ANIM_B_EXPL -> r
+    int ANIM_Y_EXPL -> s
+    int ANIM_G_EXPL -> t
+    int ANIM_BAD_EXPL -> u
+    int ANIM_BOMB_EXPL -> v
+    int SND_GOOD_HIT -> w
+    int SND_BAD_HIT -> x
+    int SND_ROTATE -> y
+    int SND_BOMB -> z
+    int SND_MOVE -> A
+    int SND_ITEM -> B
+    int SND_BLACKHOLE -> C
+    int SND_GALAXYEXPLODE -> D
+    int SND_READY -> E
+    int FONT_SFTELEVISED -> F
+    int IMGA_BLOCK_B_DS -> G
+    int IMGA_BLOCK_R_DS -> H
+    int IMGA_BLOCK_G_DS -> I
+    int IMGA_BLOCK_Y_DS -> J
+    int IMG_BLOCK_DS -> K
+    int IMGA_BLOCK_R2G -> L
+    int IMGA_BLOCK_R2B -> M
+    int IMGA_BLOCK_R2Y -> N
+    int IMGA_BLOCK_G2R -> O
+    int IMGA_BLOCK_G2B -> P
+    int IMGA_BLOCK_G2Y -> Q
+    int IMGA_BLOCK_Y2R -> R
+    int IMGA_BLOCK_Y2G -> S
+    int IMGA_BLOCK_Y2B -> T
+    int IMGA_BLOCK_B2R -> U
+    int IMGA_BLOCK_B2G -> V
+    int IMGA_BLOCK_B2Y -> W
+    int IMG_ITEM_XB_B -> X
+    int IMG_ITEM_XB_R -> Y
+    int IMG_ITEM_XB_Y -> Z
+    int IMG_ITEM_XB_G -> aa
+    int IMG_ITEM_XL_B -> ab
+    int IMG_ITEM_XL_R -> ac
+    int IMG_ITEM_XL_Y -> ad
+    int IMG_ITEM_XL_G -> ae
+    int DESAT_CONV_COUNT -> af
+    int COLOR_CONV_COUNT -> ag
+    int[] $SWITCH_TABLE$android$graphics$Bitmap$Config -> ah
+    void obtainAssets() -> a
+    void loadItems(com.whateversoft.android.framework.Graphics) -> a
+    void loadBaseColorBlocks(com.whateversoft.android.framework.Graphics) -> b
+    void loadSounds(com.whateversoft.android.framework.Audio) -> a
+    void loadExplosionAnims(com.whateversoft.android.framework.Graphics) -> c
+    void createDesatBmps() -> c
+    void createConvBmps() -> d
+    com.whateversoft.android.framework.ImageFrame createColorFilteredImg(com.whateversoft.android.framework.ImageFrame,android.graphics.ColorMatrix) -> a
+    int[] $SWITCH_TABLE$android$graphics$Bitmap$Config() -> e
+com.whateversoft.colorshafted.screens.HighScoreAssets -> com.whateversoft.colorshafted.e.i:
+    int ASSET_COUNT -> c
+    int IMG_SPACE_BG -> d
+    int IMG_SCROLL_UP -> e
+    int IMG_SCROLL_DOWN -> f
+    int IMG_HEADER -> g
+    int IMG_FOOTER -> h
+    int IMG_LOCAL_S -> i
+    int IMG_LOCAL_U -> j
+    int IMG_GLOBAL_S -> k
+    int IMG_GLOBAL_U -> l
+    int ANIM_LOADING -> m
+    int SND_MOVE -> n
+    int FONT_SFTELEVISED -> o
+    void obtainAssets() -> a
+com.whateversoft.colorshafted.screens.HighScoreBufferScr -> com.whateversoft.colorshafted.e.j:
+    int rank -> v
+    com.whateversoft.colorshafted.ColorShafted$GameMode gameMode -> w
+    boolean scoreSubmitted -> x
+    void timedLogic() -> a
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    int getScreenCode() -> j
+com.whateversoft.colorshafted.screens.HighScoreScr -> com.whateversoft.colorshafted.e.k:
+    int SCOPE_LOCAL -> v
+    int SCOPE_GLOBAL -> w
+    int SECTION_COUNT -> x
+    int SECTION_ARCADE_LOCAL -> y
+    int SECTION_ARCADE_GLOBAL -> z
+    int SECTION_PSYCHOUT_LOCAL -> A
+    int SECTION_PSYCHOUT_GLOBAL -> B
+    int SCORES_ON_SCREEN -> C
+    int PAGE_LEFT -> D
+    int PAGE_SHOWN -> E
+    int PAGE_RIGHT -> F
+    int SCREEN_WIDTH -> G
+    int SLIDE_L_THRESHHOLD -> H
+    int SLIDE_R_THRESHHOLD -> I
+    com.whateversoft.android.framework.ImageEntity headerImg -> J
+    com.whateversoft.android.framework.ImageEntity footerImg -> K
+    com.whateversoft.android.framework.ImageEntity scrollUpBtn -> L
+    com.whateversoft.android.framework.ImageEntity scrollDownBtn -> M
+    com.whateversoft.android.framework.ImageEntity localSBtn -> N
+    com.whateversoft.android.framework.ImageEntity localUBtn -> O
+    com.whateversoft.android.framework.ImageEntity globalSBtn -> P
+    com.whateversoft.android.framework.ImageEntity globalUBtn -> Q
+    com.whateversoft.android.framework.ImageEntity backgroundImg -> R
+    com.whateversoft.android.framework.TextEntity titleTxt -> S
+    com.whateversoft.android.framework.TextEntity navTxt -> T
+    com.whateversoft.android.framework.TextEntity modeTxt -> U
+    com.whateversoft.android.framework.AnimEntity loadingBoxAnim -> V
+    boolean transitioning -> W
+    double sliderX -> X
+    double sliderXTxt -> Y
+    boolean touchIsDown -> Z
+    int initTouchX -> aa
+    com.whateversoft.colorshafted.database.ScoreDataSource dataSource -> ab
+    int playerOnlineRank -> ac
+    com.whateversoft.colorshafted.ColorShafted$GameMode playerPlayedMode -> ad
+    boolean playerPlayedGame -> ae
+    boolean loadedLocalData -> af
+    com.whateversoft.colorshafted.screens.highscore.SectionScoreData[] dataSections -> ag
+    int dataSectionIndex -> ah
+    int ourGameMode -> ai
+    int ourRank -> aj
+    com.whateversoft.colorshafted.screens.highscore.PageFieldsBuffer[] pageBuffers -> ak
+    com.whateversoft.android.framework.RectEntity[] selectViewRects -> al
+    int bgY -> am
+    float backgroundAngle -> an
+    int onlineReqCount -> ao
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShafted$GameMode -> ap
+    void timedLogic() -> a
+    void transitionScreen() -> k
+    void loadLocalScores() -> l
+    void setDataScope(com.whateversoft.colorshafted.ColorShafted$GameMode,int) -> a
+    void refreshScoreNavigation() -> m
+    int getViewedScope() -> n
+    com.whateversoft.colorshafted.ColorShafted$GameMode getViewedMode() -> o
+    void scrollUp() -> p
+    void scrollDown() -> q
+    void screenTapped() -> h
+    void screenTapHoldRelease() -> r
+    void onServerResponse(com.whateversoft.android.framework.impl.android.network.HttpRequestTask,int,java.lang.String) -> a
+    void onRequestTimeout(com.whateversoft.android.framework.impl.android.network.HttpRequestTask) -> a
+    void fadeInLogic(float) -> b
+    void goToScreen(com.whateversoft.android.framework.Screen) -> a
+    void backPressed() -> g
+    void updateBackground() -> s
+    void positionPageBuffers() -> t
+    void setTextAlphas() -> u
+    void completedARequest() -> v
+    void createdRequest() -> w
+    void showServerErrorMsg() -> a_
+    int getScreenCode() -> j
+    int[] $SWITCH_TABLE$com$whateversoft$colorshafted$ColorShafted$GameMode() -> x
+com.whateversoft.colorshafted.screens.HighScoreScr$1 -> com.whateversoft.colorshafted.e.l:
+    com.whateversoft.colorshafted.screens.HighScoreScr this$0 -> a
+    android.graphics.Rect getBounds() -> c
+com.whateversoft.colorshafted.screens.HighScoreScr$2 -> com.whateversoft.colorshafted.e.m:
+    com.whateversoft.colorshafted.screens.HighScoreScr this$0 -> a
+    android.graphics.Rect getBounds() -> c
+com.whateversoft.colorshafted.screens.HighScoreScr$3 -> com.whateversoft.colorshafted.e.n:
+    com.whateversoft.colorshafted.screens.HighScoreScr this$0 -> a
+    int val$indexRequestedAt -> b
+    com.whateversoft.android.framework.impl.android.network.HttpClientApp val$thisScr -> c
+    void run() -> run
+com.whateversoft.colorshafted.screens.HighScoreScr$4 -> com.whateversoft.colorshafted.e.o:
+    com.whateversoft.colorshafted.screens.HighScoreScr this$0 -> a
+    com.whateversoft.colorshafted.screens.HighScoreScr val$thisScr -> b
+    void run() -> run
+com.whateversoft.colorshafted.screens.RecycleGameScr -> com.whateversoft.colorshafted.e.p:
+    void timedLogic() -> a
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    int getScreenCode() -> j
+com.whateversoft.colorshafted.screens.SplashScreen -> com.whateversoft.colorshafted.e.q:
+    com.whateversoft.android.framework.RectEntity fadeRect -> v
+    int FADE_IN_TIMER -> w
+    com.whateversoft.android.framework.Pixmap whateverSoftLogo -> x
+    void timedLogic() -> a
+    void fadeInLogic(float) -> b
+    void fadeOutLogic(float) -> c
+    void backPressed() -> g
+    void present() -> b
+    int getScreenCode() -> j
+com.whateversoft.colorshafted.screens.TestBlockScr -> com.whateversoft.colorshafted.e.r:
+    void timedLogic() -> a
+    int getScreenCode() -> j
+    void screenTapped() -> h
+com.whateversoft.colorshafted.screens.TitleBufferScr -> com.whateversoft.colorshafted.e.s:
+    float initialBgPos -> v
+    boolean givenBgPos -> w
+    com.whateversoft.colorshafted.ColorShafted$GameMode gameMode -> x
+    void timedLogic() -> a
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    int getScreenCode() -> j
+com.whateversoft.colorshafted.screens.TitleScr -> com.whateversoft.colorshafted.e.t:
+    boolean DEBUG_Y0_FACE -> ag
+    boolean initialized -> v
+    int FADE_OUT_LENGTH -> ah
+    int FADE_IN_LENGTH -> ai
+    com.whateversoft.android.framework.ImageEntity spaceBackgroundImg -> w
+    com.whateversoft.android.framework.ImageEntity iconContainerImg -> x
+    com.whateversoft.android.framework.ImageEntity arcadeModeImg -> y
+    com.whateversoft.android.framework.ImageEntity psychoutModeImg -> z
+    com.whateversoft.android.framework.ImageEntity logoImg -> A
+    com.whateversoft.android.framework.ImageEntity disableSndImg -> B
+    com.whateversoft.android.framework.ImageEntity disableMusImg -> C
+    com.whateversoft.colorshafted.screens.TitleScr$SelectableIcon hSBtn -> D
+    com.whateversoft.colorshafted.screens.TitleScr$SelectableIcon settingsBtn -> E
+    com.whateversoft.colorshafted.screens.TitleScr$SelectableIcon creditsBtn -> F
+    com.whateversoft.colorshafted.screens.TitleScr$SelectableIcon soundBtn -> G
+    com.whateversoft.colorshafted.screens.TitleScr$SelectableIcon musicBtn -> H
+    com.whateversoft.colorshafted.screens.TitleScr$SelectableIcon tutorialBtn -> I
+    com.whateversoft.android.framework.TextEntity copyrightTxt -> J
+    android.graphics.Rect screenFadeRect -> K
+    int bgY -> L
+    float backgroundAngle -> M
+    int SELECTION_COUNT -> N
+    int SELECTION_ARCADE -> O
+    int SELECTION_PSYCHOUT -> P
+    int SELECTION_SETTINGS -> Q
+    int SELECTION_HIGHSCORE -> R
+    int SELECTION_TUTORIAL -> S
+    int SELECTION_CREDITS -> T
+    int SELECTION_SOUND -> U
+    int SELECTION_MUSIC -> V
+    android.graphics.Rect[] selectionRects -> W
+    com.whateversoft.colorshafted.screens.title.RotatingColorWheel arcadeWheel -> X
+    com.whateversoft.colorshafted.screens.title.RotatingColorWheel psychoutWheel -> Y
+    java.lang.StringBuffer loadingStr -> Z
+    java.util.ArrayList selectableObjects -> aa
+    int startMode -> ab
+    int keyboardSelection -> ac
+    int fadeInStyle -> ad
+    int FADE_IN_CONTINUOUS -> ae
+    int FADE_IN_BLACKRECT -> af
+    void timedLogic() -> a
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    void screenTapped() -> h
+    void selectionChosen(int) -> a
+    void keyboardNavigation() -> k
+    int selectionAt(int,int) -> a
+    void fadeOutLogic(float) -> c
+    void backPressed() -> g
+    void changeKeyboardSelection(int) -> b
+    void fadeInLogic(float) -> b
+    int getScreenCode() -> j
+com.whateversoft.colorshafted.screens.TitleScr$1 -> com.whateversoft.colorshafted.e.u:
+    com.whateversoft.colorshafted.screens.TitleScr this$0 -> a
+    void update(float) -> a
+com.whateversoft.colorshafted.screens.TitleScr$2 -> com.whateversoft.colorshafted.e.v:
+    com.whateversoft.colorshafted.screens.TitleScr this$0 -> a
+    void update(float) -> a
+com.whateversoft.colorshafted.screens.TitleScr$SelectableIcon -> com.whateversoft.colorshafted.e.w:
+    boolean selected -> a
+    int selectedTimer -> b
+    com.whateversoft.android.framework.ImageFrame[] images -> c
+    com.whateversoft.colorshafted.screens.TitleScr this$0 -> d
+    void update(float) -> a
+    void select() -> a
+com.whateversoft.colorshafted.screens.TitleScr$SelectionAction -> com.whateversoft.colorshafted.e.x:
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction PLAY_ARCADE -> a
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction PLAY_SURVIVAL -> b
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction GO_TO_SETTINGS -> c
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction TOGGLE_SOUND -> d
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction TOGGLE_MUSIC -> e
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction VIEW_TUTORIAL -> f
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction VIEW_CREDITS -> g
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction VIEW_HIGHSCORES -> h
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction[] ENUM$VALUES -> i
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction[] values() -> values
+    com.whateversoft.colorshafted.screens.TitleScr$SelectionAction valueOf(java.lang.String) -> valueOf
+com.whateversoft.colorshafted.screens.TitleScrAssets -> com.whateversoft.colorshafted.e.y:
+    int ASSET_COUNT -> c
+    int IMG_SPACE_BG -> d
+    int IMG_ARCADE_BTN -> e
+    int IMG_PSYCHOUT_BTN -> f
+    int IMG_BUTTON_WHEEL -> g
+    int IMG_LOGO -> h
+    int IMG_ICON_CONTAINER -> i
+    int IMG_ICON_SETTINGS_U -> j
+    int IMG_ICON_TUTORIAL_U -> k
+    int IMG_ICON_SOUND_U -> l
+    int IMG_ICON_MUSIC_U -> m
+    int IMG_ICON_CREDITS_U -> n
+    int IMG_ICON_HIGHSCORE_U -> o
+    int IMG_ICON_SETTINGS_S -> p
+    int IMG_ICON_TUTORIAL_S -> q
+    int IMG_ICON_SOUND_S -> r
+    int IMG_ICON_MUSIC_S -> s
+    int IMG_ICON_CREDITS_S -> t
+    int IMG_ICON_HIGHSCORE_S -> u
+    int IMG_ICON_DISABLED -> v
+    int FONT_SFTELEVISED -> w
+    int SND_BOMB -> x
+    int SND_ITEM -> y
+    int SND_ROTATE -> z
+    void obtainAssets() -> a
+com.whateversoft.colorshafted.screens.WhateversoftScr -> com.whateversoft.colorshafted.e.z:
+    int FADE_LENGTH -> v
+    int DEFAULT_LAYER -> w
+    com.whateversoft.android.framework.ImageEntity logo -> x
+    void timedLogic() -> a
+    void drawEntities(com.whateversoft.android.framework.Graphics) -> a
+    void fadeInLogic(float) -> b
+    void fadeOutLogic(float) -> c
+    int getScreenCode() -> j
+com.whateversoft.colorshafted.screens.WhateversoftScrAssets -> com.whateversoft.colorshafted.e.A:
+    int ASSET_COUNT -> c
+    int IMG_LOGO -> d
+    void obtainAssets() -> a
+com.whateversoft.colorshafted.screens.highscore.OnScreenEntry -> com.whateversoft.colorshafted.e.a.a:
+    int COLUMN_RANK -> a
+    int COLUMN_NAME -> b
+    int COLUMN_SCORE -> c
+    int COLUMN_PLAYTIME -> d
+    int COLUMN_DATE -> e
+    int FONT_SIZE -> f
+    int LAYER -> g
+    com.whateversoft.colorshafted.screens.highscore.PageFieldsBuffer pageBuffer -> h
+    com.whateversoft.colorshafted.screens.HighScoreScr screen -> i
+    int sectionW -> j
+    int screenWidth -> k
+    int yPosition -> l
+    com.whateversoft.colorshafted.ColorShafted$GameMode onMode -> m
+    int[] xSections -> n
+    boolean isOurScore -> o
+    com.whateversoft.android.framework.TextEntity[] fields -> p
+    void setEntry(int,com.whateversoft.colorshafted.database.ScoreEntry) -> a
+    void positionElements() -> a
+    void setAsOurScore(boolean) -> a
+com.whateversoft.colorshafted.screens.highscore.PageFieldsBuffer -> com.whateversoft.colorshafted.e.a.b:
+    com.whateversoft.colorshafted.screens.HighScoreScr screen -> a
+    int bufferIndex -> b
+    int xOffset -> c
+    com.whateversoft.colorshafted.screens.highscore.OnScreenEntry[] entriesShown -> d
+    int ourRank -> e
+    void setScoreEntries(int,com.whateversoft.colorshafted.database.ScoreEntry[],int) -> a
+    void setXOffset(int) -> a
+    int getXOffset() -> a
+    int getBufferIndex() -> b
+com.whateversoft.colorshafted.screens.highscore.SectionScoreData -> com.whateversoft.colorshafted.e.a.c:
+    boolean firstDataFetched -> a
+    java.util.ArrayList scoreEntries -> b
+    int scrollIndex -> c
+    int resultTotalCount -> d
+    void clearData() -> a
+    void appendScores(com.whateversoft.colorshafted.database.ScoreEntry[]) -> a
+    void setScores(com.whateversoft.colorshafted.database.ScoreEntry[]) -> b
+    void setScores(java.util.ArrayList) -> a
+    boolean setScrollIndex(int) -> a
+    java.util.ArrayList getScores() -> b
+    int getScrollIndex() -> c
+    boolean wasDataFetched() -> d
+    void setResultTotalCount(int) -> b
+    int getResultTotalCount() -> e
+com.whateversoft.colorshafted.screens.title.RotatingColorWheel -> com.whateversoft.colorshafted.e.b.a:
+    com.whateversoft.android.framework.Input input -> a
+    double rotationSpeed -> b
+    void update(float) -> a
+com.whateversoft.math.MotionMath -> com.whateversoft.a.a:
+    double coordsToAngle(double,double) -> a

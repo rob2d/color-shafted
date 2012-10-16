@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prompt_dual_layout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content" 
+    android:orientation = "vertical"
+    android:layout_gravity="center_horizontal">
+ 	<LinearLayout 
+ 	    android:orientation="vertical"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity = "center_horizontal">
+   		<TextView
+       		android:id="@+id/prompt_dual_text"
+       		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="giving you a prompt yo"
+        	android:layout_centerHorizontal = "true"/>
+    </LinearLayout>
+    <LinearLayout 
+ 	   	android:orientation="horizontal"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity="center">
+    	<Button
+	   		android:id="@+id/prompt_dual_1_button"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	   		android:layout_gravity="center"
+	   		android:focusable="true"
+	   		android:focusableInTouchMode = "false"
+	    	android:text = "OK"/>
+    	<View
+    	    android:layout_width="10dp"
+    	    android:layout_height="fill_parent"
+    	    android:layout_gravity = "center"/>
+    	<Button
+	   		android:id="@+id/prompt_dual_2_button"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	   		android:layout_gravity="center"
+	   		android:focusable="true"
+	   		android:focusableInTouchMode = "false"
+	    	android:text = "OK"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prompt_highscore_layout"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content" 
+    android:orientation = "vertical"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft    = "0dp"
+    android:paddingRight   = "0dp"
+    android:paddingTop     = "0dp"
+    android:paddingBottom  = "0dp">
+ 	<LinearLayout 
+ 	    android:orientation="vertical"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity = "center_horizontal">
+   		<TextView
+       		android:id="@+id/prompt_highscore_entername_text"
+       		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:text="Enter your name for the high score board!"
+        	android:textStyle="italic"
+        	android:gravity="center"/>
+   		<EditText
+   		    android:id="@+id/prompt_highscore_nameedit"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_marginBottom="10dp"
+   		    android:imeOptions="flagNoExtractUi"
+   		    android:maxLength="12"
+   		    android:inputType="text"
+   		    android:layout_gravity="center" />
+   		<Button
+	   		android:id="@+id/prompt_highscore_next_button"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	   		android:layout_gravity="center"
+	   		android:layout_marginBottom="10dp"
+	   		android:clickable="false"
+	   		android:focusable="true"
+	   		android:focusableInTouchMode="false"
+	    	android:text = "NEXT"/>
+    	<RelativeLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="25dp"
+    	    android:layout_gravity="center_vertical"
+    	    android:gravity="center"
+    	    android:orientation="horizontal"
+    	    android:paddingBottom = "1dp">
+    	    <TextView
+    	        android:id="@+id/prompt_highscore_usedefaultname"
+    	        android:text="Use this name as default"
+    	  		android:layout_width="300dp"
+    	  		android:layout_height="wrap_content"
+    	  		android:layout_toLeftOf="@+id/prompt_highscore_cb_dontaskagain"
+    	  		android:textSize="14dp"/>
+    	    <CheckBox
+    	        android:id="@+id/prompt_highscore_cb_dontaskagain"
+    	        android:layout_width="50dp"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentRight="true"
+    	        android:focusable="true"
+    	        android:focusableInTouchMode="false"
+    	        />
+    	</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

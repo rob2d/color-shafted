@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tutorial_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation = "vertical">
+    <TextView
+	    android:id="@+id/tutorial_title_txt"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+       	android:layout_gravity="center"
+       	android:textStyle="bold"
+       	android:textSize="22dp"
+       	android:paddingTop="0dp"
+       	android:paddingBottom="10dp"
+       	android:text="SECTION MESSAGE"/>
+   		<!-- The Results Box -->
+   		<LinearLayout
+   		    android:orientation = "vertical"
+   		    android:layout_width= "300dp"
+   		    android:layout_height="wrap_content"
+   		    android:layout_gravity="center_horizontal"
+   		    android:gravity="center_horizontal"
+   		    android:background="#00000000"
+   		    android:paddingLeft="20dp"
+   		    android:paddingRight="20dp"
+   		    android:paddingTop="10dp"
+   		    android:paddingBottom="30dp">
+   		    <ScrollView
+   		        android:layout_width="fill_parent"
+   		        android:layout_height="120dp"
+   		        android:focusable="true"
+   		        android:focusableInTouchMode="false"
+   		        android:background="@drawable/wireframe_green_semitrans"
+   		        android:gravity="center"
+   		        android:scrollbarThumbVertical="@drawable/wireframe_green_trans">
+   		   	<TextView
+   		   	    android:id="@+id/tutorial_desc_txt"
+   		   	    android:layout_width="fill_parent"
+   		   	    android:layout_height="wrap_content"
+   		   	    android:layout_gravity="top"
+   		   	    android:gravity = "center"
+   		   	    android:textSize = "16sp"
+   		   	    android:text="some scrolling contents giving people orders go here! >="/>
+   		</ScrollView>
+   		</LinearLayout>
+   		<!-- End of the Results Box -->
+   	<!-- The Button Navigation Row -->
+    <LinearLayout 
+ 	   	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:gravity="center"
+ 	    android:layout_gravity="center">
+   	    <Button
+	   		android:id="@+id/tutorial_ok_btn"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	   		android:layout_gravity="center"
+	   		android:focusable="true"
+	   		android:focusableInTouchMode="false"
+	    	android:text = "NEXT>>"/>
+    </LinearLayout>
+    <!-- End of The Button Navigation Row -->
+</LinearLayout>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@android:id/widget_frame" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:paddingLeft="15dp" 
+    android:paddingTop="5dp" 
+    android:paddingRight="10dp" 
+    android:paddingBottom="5dp">
+
+<TextView android:id="@android:id/title" 
+    android:layout_alignParentLeft="true" 
+    android:layout_alignParentTop="true" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="18dp" 
+    android:typeface="sans" 
+    android:textStyle="normal" />
+<TextView 
+    android:id="@android:id/summary" 
+    android:layout_alignParentLeft="true" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@android:id/title"/>
+<LinearLayout 
+    android:id="@+id/seekBarPrefBarContainer" 
+    android:layout_width="200dp" 
+    android:layout_height="wrap_content"				
+    android:layout_below="@android:id/summary"
+    android:layout_alignParentRight="true"
+    android:paddingRight="30dp"/>
+<TextView 
+    android:id="@+id/seekBarPrefValue" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_above="@android:id/summary"
+    android:layout_alignParentRight="true"
+    android:textSize="18dp" 
+    android:typeface="sans" 
+    android:textStyle="bold"
+    android:gravity="right"/>
+</RelativeLayout>

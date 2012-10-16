@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    			  xmlns:rob2d  ="rob2d">
+<PreferenceScreen
+    android:title="Gameplay Options"
+    android:summary="Customize how games are played">
+	<com.whateversoft.android.preferences.SeekBarPreference
+		android:key="initialDifficulty"
+	    android:title="Initial Difficulty Level"
+	    android:summary="How challenging do you want the game to be when it starts?"
+	    android:defaultValue="0"
+	    android:max="9"
+	    rob2d:min="0"
+	 	rob2d:unitsLeft="1"
+	   	rob2d:unitsRight="1" />
+	    <PreferenceCategory
+        	android:title="Arcade Mode">
+		<ListPreference
+		    android:key="initialArcadeLives"
+		    android:title="Number of Lives"
+		    android:summary="How many lives do you want to start with?"
+		    android:entries="@array/lives_arcade_mode"
+		    android:entryValues="@array/lives_arcade_mode"
+		    android:defaultValue="5"/>
+	</PreferenceCategory>
+</PreferenceScreen>
+<PreferenceScreen
+    android:title="Input Options"
+    android:summary="Change the way you control the game">
+	<CheckBoxPreference
+	    android:key="bombButton"
+	    android:title="Bomb w/On-Screen Button"
+	    android:summary="bomb the screen by touching a button in the game"
+	    android:defaultValue="true"/>	
+	<CheckBoxPreference
+	    android:key="bombLongTap"
+	    android:title="Bomb w/Long-Tap"
+	    android:summary="bomb screen by tapping it slightly longer than to rotate"
+	    android:defaultValue="false"/>
+	<CheckBoxPreference
+	    android:key="bombShakeGesture"
+	    android:title="Bomb by Shaking Device"
+	    android:summary="bomb the screen by simply shaking it\n(note: accelerometer is neccessary on your device for this feature!)"
+	    android:defaultValue="false"/>	
+	<CheckBoxPreference
+	    android:key="bombShakeOnX"
+	    android:title="Shake On X-Axis"
+	    android:summary="bomb gestures occur with horizontal(left to right) gestures, otherwise we use vertical(towards/away)"
+	    android:dependency="bombShakeGesture"
+	    android:defaultValue="true"/>
+	<com.whateversoft.android.preferences.SeekBarPreference
+		android:key="shakeSensitivity"
+	    android:title="Shake Sensitivity"
+	    android:summary="How sensitive should the bomb shake gesture be?\n(at lowest, bombing the screen requires more force)"
+	    android:dependency="bombShakeGesture"
+	    android:defaultValue="50"
+	    android:max="100"
+	    rob2d:min="0"
+	 	rob2d:unitsLeft="1"
+	   	rob2d:unitsRight="1" />
+</PreferenceScreen>
+<PreferenceScreen
+    android:title="Audio Options"
+    android:summary="Whether and how sound and music is played">
+	<CheckBoxPreference
+	    android:key="enableSfx"
+	    android:title="Enable Sound Effects"
+	    android:summary="play sound effects in the menus and game"
+	    android:defaultValue="true"/>
+		<CheckBoxPreference
+	    	android:key="enableMusic"
+	    	android:title="Enable Music"
+	    	android:summary="play music during the game"
+	    	android:defaultValue="true"
+	    	/>
+	<PreferenceCategory
+    android:title="Music Playlist Options">
+	<ListPreference
+  		android:key="musicPlayMode"
+  		android:title="Music Play Mode"
+ 		android:summary="how music tracks are arranged"
+  		android:entries="@array/music_playmodes_desc"
+ 		android:entryValues="@array/music_playmodes"
+ 		android:dependency="enableMusic"
+ 		android:defaultValue="SHUFFLE"/>
+    <CheckBoxPreference
+        android:key="musicTrackA"
+        android:title="Play Track A"
+        android:dependency="enableMusic"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:key="musicTrackB"
+        android:title="Play Track B"
+        android:dependency="enableMusic"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:key="musicTrackC"
+        android:title="Play Track C"
+        android:dependency="enableMusic"
+        android:defaultValue="true"/>
+    <CheckBoxPreference
+        android:key="musicTrackD"
+        android:title="Play Track D"
+        android:dependency="enableMusic"
+        android:defaultValue="true"/>
+	</PreferenceCategory>
+	</PreferenceScreen>
+	<PreferenceScreen
+	    android:title="Graphics Options"
+		android:summary="disable graphics features to have the game work best for your device's performance">
+	    <CheckBoxPreference
+    	    android:key="enableGfxAntiAlias"
+    	    android:title="Enable Anti-Aliasing"
+    	    android:summary="Whether to draw rectangles and text using anti aliasing or not(disable to improve performance)"
+    	    android:defaultValue="false"/>
+    	<CheckBoxPreference
+    	    android:key="enableGfxMotionBlur"
+    	    android:title="Motion Blur Effect"
+    	    android:summary="Whether the control block has motion blurring when moving or rotating"
+    	    android:defaultValue="true"/>
+    	<CheckBoxPreference
+    	    android:key="enableGfxComboHUD"
+    	    android:title="Hit-Chain-Combo Pop Up Graphicss"
+    	    android:summary="Whether or not to display how many blocks have been hit in a row"
+    	    android:defaultValue="true"/>
+    		<PreferenceCategory
+        		android:title="Intro Effects">
+    			<CheckBoxPreference
+    			    android:key="introZoomOut"
+    			    android:title="Zoom Out During Intro"
+    			    android:summary="Whether or not to apply the zoom-out effect to the game's intro sequence"
+    			    android:defaultValue="false"/>
+    			<CheckBoxPreference
+    			    android:key="introScrollTxt"
+    			    android:title="Scroll Ready Text During Intro"
+    			    android:summary="Whether or scroll text across the screen during the game's intro sequence"
+    			    android:defaultValue="true"/>
+    		</PreferenceCategory>
+	</PreferenceScreen>
+	<PreferenceScreen
+	    android:title="High Score Options"
+		android:summary="High score data and name input">
+    	<CheckBoxPreference
+    	    android:key="hSpromptForName"
+    	    android:title="Prompt for High Score Name"
+    	    android:summary="Whether to prompt for your name when you have made a highscore. If set false, the default name used will always be the high score entry name"
+    	    android:defaultValue="true"/>
+	    <EditTextPreference
+	        android:key="hSdefaultName"
+	        android:title="Default Name Used"
+	        android:summary="What name do you want to be input for high scores?"
+	        android:defaultValue=""/>
+	</PreferenceScreen>
+	<PreferenceScreen
+	    android:title="Network Options"
+		android:summary="adjust how network requests are made">
+    	<ListPreference
+    	    android:key="httpTimeOut"
+    	    android:title="Network Timeout"
+    	    android:summary="How long to wait for network requests before cancelling"
+    	    android:entries="@array/http_timeout_desc"
+    	    android:entryValues="@array/http_timeout"
+    	    android:defaultValue="60000"/>
+	</PreferenceScreen>
+</PreferenceScreen>

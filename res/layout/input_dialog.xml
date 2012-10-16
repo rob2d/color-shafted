@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/prompt_input_layout"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content" 
+    android:orientation = "vertical"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft    = "0dp"
+    android:paddingRight   = "0dp"
+    android:paddingTop     = "0dp"
+    android:paddingBottom  = "0dp">
+ 	<LinearLayout 
+ 	    android:orientation="vertical"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity = "center_horizontal">
+   		<TextView
+       		android:id="@+id/prompt_input_text"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="giving you a prompt yo"
+        	android:gravity="center"/>
+   		<EditText
+   		    android:id="@+id/prompt_input_edittxt"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:inputType="text"
+   		    android:imeOptions="flagNoExtractUi"
+   		    android:focusable="true"
+   		    android:focusableInTouchMode="false"
+   		    android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout 
+ 	   	android:orientation="vertical"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity="center">
+    	<Button
+	   		android:id="@+id/prompt_input_ok_button"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	   		android:layout_gravity="center"
+	   		android:focusable="true"
+	   		android:focusableInTouchMode="false"
+	    	android:text = "OK"/>
+    </LinearLayout>
+</LinearLayout>

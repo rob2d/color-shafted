@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="music_playmodes_desc">
+        <item>Play All Tracks</item>
+        <item>Shuffle All Tracks</item>
+        <item>Play a Single Track</item>
+    </string-array>
+    
+    <string-array name="music_playmodes">
+        <item>LOOP_ALL</item>
+        <item>SHUFFLE</item>
+        <item>LOOP_SINGLE</item>
+    </string-array>
+    
+    <string-array name="bomb_input_method_desc">
+        <item>On-Screen Button</item>
+        <item>Shake the Device</item>
+        <item>Long-tap the screen</item>
+    </string-array>
+    
+    <string-array name="bomb_input_method">
+        <item>ONSCREEN_BUTTON</item>
+        <item>SHAKE_DEVICE</item>
+        <item>LONG_TAP</item>
+    </string-array>
+    
+    <string-array name="http_timeout">
+        <item> 30000</item>
+        <item >60000</item>
+        <item>120000</item>
+    </string-array>
+    
+    <string-array name="http_timeout_desc">
+        <item> 30 SECONDS</item>
+        <item> 60 SECONDS</item>
+        <item>120 SECONDS</item>
+    </string-array>
+    
+   	<string-array name="lives_arcade_mode">
+   	    <item>3</item>
+   	    <item>4</item>
+   	    <item>5</item>
+   	</string-array>
+   	
+    <string-array name="initial_difficulty">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>
